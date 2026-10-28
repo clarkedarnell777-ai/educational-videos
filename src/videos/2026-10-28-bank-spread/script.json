@@ -1,0 +1,64 @@
+{
+  "id": "BankSpread",
+  "title": "How Banks Really Make Money (The Spread)",
+  "productionDate": "2026-10-28",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 180,
+      "vo": "The average savings account pays 0.38%. Credit cards charge about 21%.",
+      "captions": [
+        {"text": "The average savings account pays 0.38%.", "from": 8, "to": 92},
+        {"text": "Credit cards charge about 21%.", "from": 92, "to": 180}
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 192,
+      "vo": "That gap is the spread: borrow cheap from depositors, lend higher.",
+      "captions": [
+        {"text": "That gap is the spread:", "from": 8, "to": 80},
+        {"text": "borrow cheap from depositors, lend higher.", "from": 80, "to": 192}
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 228,
+      "vo": "Ten thousand dollars in savings earns about thirty-eight dollars a year. Owed on a card, about two thousand.",
+      "captions": [
+        {"text": "$10,000 in savings earns about $38 a year.", "from": 8, "to": 128},
+        {"text": "Owed on a card, about $2,000.", "from": 128, "to": 228}
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 180,
+      "vo": "Across all loans, U.S. banks earn a 3.32% margin, per the FDIC.",
+      "captions": [
+        {"text": "Across all loans, U.S. banks earn", "from": 8, "to": 84},
+        {"text": "a 3.32% margin, per the FDIC.", "from": 84, "to": 180}
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 168,
+      "vo": "Get on the right side: shop your savings rate and pay cards in full.",
+      "captions": [
+        {"text": "Get on the right side:", "from": 8, "to": 70},
+        {"text": "shop your savings rate and pay cards in full.", "from": 70, "to": 168}
+      ]
+    }
+  ],
+  "figures": {
+    "savingsRate": {"value": 0.38, "unit": "% APY", "period": "Oct 2026", "source": "FDIC National Rate: Savings (FRED SNDR), updated 2026-10-19"},
+    "cardApr": {"value": 21.0, "unit": "% APR", "period": "Q1 2026", "source": "Federal Reserve G.19, commercial bank credit card plans, all accounts"},
+    "nim": {"value": 3.32, "unit": "%", "period": "Q2 2026", "source": "FDIC Quarterly Banking Profile, released 2026-08-25"},
+    "netIncomeBillions": {"value": 90.1, "unit": "$B", "period": "Q2 2026", "source": "FDIC Quarterly Banking Profile, released 2026-08-25"},
+    "examplePrincipal": 10000
+  }
+}
