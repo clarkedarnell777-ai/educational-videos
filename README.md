@@ -41,5 +41,6 @@ https://docs.google.com/spreadsheets/d/1sIVlIPCHp-CuA27D6Vw9Dd6qtO5Dvu4d3gMr4cbI
 | Date | Slug | Title | Status |
 |---|---|---|---|
 | 2026-10-28 | `2026-10-28-bank-spread` | How Banks Really Make Money (The Spread) | Built, awaiting preview |
+| 2026-10-30 | `2026-10-30-real-vs-nominal-gdp` | GDP Grew 5.6%… or 3.4%? Real vs. Nominal | Built (no voiceover), awaiting preview |
 
 Educational content only; not financial advice.
