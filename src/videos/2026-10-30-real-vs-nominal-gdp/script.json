@@ -1,0 +1,160 @@
+{
+  "id": "RealVsNominalGdp",
+  "title": "GDP Grew 5.6%… or 3.4%? Real vs. Nominal",
+  "productionDate": "2026-10-30",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 150,
+      "vo": "The economy grew 5.6% last quarter. Or 3.4%? Both are official.",
+      "captions": [
+        {
+          "text": "The economy grew 5.6% last quarter.",
+          "from": 8,
+          "to": 82
+        },
+        {
+          "text": "Or 3.4%? Both are official.",
+          "from": 82,
+          "to": 144
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 180,
+      "vo": "Nominal GDP counts spending in today's dollars. Real GDP removes price increases.",
+      "captions": [
+        {
+          "text": "Nominal GDP counts spending in today's dollars.",
+          "from": 8,
+          "to": 105
+        },
+        {
+          "text": "Real GDP removes price increases.",
+          "from": 105,
+          "to": 174
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 240,
+      "vo": "In Q3, nominal grew 5.6% at an annual rate, real 3.4%. The gap was mostly higher prices.",
+      "captions": [
+        {
+          "text": "In Q3, nominal grew 5.6% at an annual rate,",
+          "from": 8,
+          "to": 128
+        },
+        {
+          "text": "real 3.4%.",
+          "from": 128,
+          "to": 154
+        },
+        {
+          "text": "The gap was mostly higher prices.",
+          "from": 154,
+          "to": 234
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 198,
+      "vo": "Paychecks work the same way: a 5% raise with 3% inflation buys about 2% more.",
+      "captions": [
+        {
+          "text": "Paychecks work the same way:",
+          "from": 8,
+          "to": 69
+        },
+        {
+          "text": "a 5% raise with 3% inflation",
+          "from": 69,
+          "to": 143
+        },
+        {
+          "text": "buys about 2% more.",
+          "from": 143,
+          "to": 192
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 180,
+      "vo": "Seeing a growth number? Ask: before or after inflation?",
+      "captions": [
+        {
+          "text": "Seeing a growth number?",
+          "from": 8,
+          "to": 84
+        },
+        {
+          "text": "Ask: before or after inflation?",
+          "from": 84,
+          "to": 180
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "nominalGdp": {
+      "value": 5.6,
+      "unit": "% annual rate",
+      "period": "Q3 2026 (Jul–Sep), advance estimate",
+      "source": "BEA, GDP (Advance Estimate) 3rd Quarter 2026, published 2026-10-29; https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+    },
+    "realGdp": {
+      "value": 3.4,
+      "unit": "% annual rate",
+      "period": "Q3 2026 (Jul–Sep), advance estimate",
+      "source": "BEA, GDP (Advance Estimate) 3rd Quarter 2026, published 2026-10-29; https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf"
+    },
+    "gapPts": {
+      "value": 2.2,
+      "unit": "percentage points",
+      "period": "Q3 2026",
+      "source": "Computed: 5.6 − 3.4 (nominal minus real); BEA did not state the price index in the release, so shown as 'mostly prices'"
+    },
+    "nextEstimate": {
+      "value": "2026-11-25",
+      "source": "BEA release schedule: second estimate of Q3 2026 GDP"
+    },
+    "exampleRaise": {
+      "value": 5,
+      "unit": "%",
+      "period": "Illustrative",
+      "source": "Illustrative example"
+    },
+    "exampleInflation": {
+      "value": 3,
+      "unit": "%",
+      "period": "Illustrative",
+      "source": "Illustrative example"
+    },
+    "exampleRealRaise": {
+      "value": 1.94,
+      "unit": "%",
+      "period": "Illustrative",
+      "source": "Computed in code: (1.05 / 1.03 − 1) × 100 = 1.94, shown as ≈2%"
+    }
+  },
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko/ElevenLabs eleven_v4_turbo clips (default voice) totalled 32.86 s after silence trim; at the 1.10 tempo cap that is 29.88 s vs a 27.2 s budget (needs ~1.21×). Per rules, words were not cut and the video is built without audio.",
+    "clipSecondsTrimmed": [
+      6.647,
+      6.211,
+      9.155,
+      6.539,
+      4.312
+    ]
+  }
+}

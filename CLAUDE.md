@@ -3,6 +3,19 @@
 Daily (Mon–Fri) 30-second vertical educational videos on business, real estate,
 finance, economics and financial news, built with Remotion. Owner: Darnell Clarke.
 
+## Schedule (America/Los_Angeles, Mon–Fri)
+- 5:40 AM — scheduled task "Weekday video script" researches and logs the day's script
+  (Status "Awaiting Approval") and emails/pushes it to the owner.
+- Owner approves by setting **Script approval = Approved** in the tracker (or "Changes
+  Requested" with notes in Notes / errors).
+- 2:22 PM — scheduled task "Weekday video build" builds every Approved row whose
+  "Remotion project location" is empty, pushes it here, sets Status "Preview Ready".
+- Owner previews (`git pull`, `npm install`, `npm run studio`) and says "final approved";
+  only then render. Category rotation: Mon Business · Tue Real Estate · Wed Finance ·
+  Thu Economics · Fri Current Events.
+- In an interactive session, check the tracker first: build only Approved rows, render
+  only "Final Approved" rows, and update Status / Render status / locations as you go.
+
 ## Workflow
 1. A scheduled task researches and writes each weekday's script and logs it to the
    Google Sheet "Educational Video Content Tracker"
