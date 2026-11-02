@@ -32,7 +32,7 @@ export const S3How: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const axis = useDraw(STAGGER, 20);
   const nom = useSpring(STAGGER * 2);
   const real = useSpring(128); // "real 3.4%" caption
-  const bracket = useDraw(156, 24); // "The gap was mostly higher prices."
+  const bracket = useDraw(156, 24); // "The gap reflects higher prices."
   const gapLabel = useSpring(170);
 
   // Bars grow in step with their count-up labels and land exactly on scale.
@@ -98,12 +98,12 @@ export const S3How: React.FC<SceneProps> = ({captions, showSafeZone}) => {
             <CountUp to={GAP} start={170} duration={24} decimals={1} />
           </div>
           <div style={{fontSize: 30, fontWeight: 600, color: COLORS.muted, lineHeight: 1.2}}>
-            pts, mostly higher prices
+            pts from higher prices
           </div>
         </Enter>
       </div>
       <Enter delay={STAGGER * 3}>
-        <SourceTag>BEA advance estimate, Oct 29, 2026 · Q3 (Jul–Sep) · revised Nov 25</SourceTag>
+        <SourceTag>BEA advance estimate, Oct 29, 2026 · Q3 (Jul–Sep) · update Nov 25</SourceTag>
       </Enter>
     </SceneFrame>
   );

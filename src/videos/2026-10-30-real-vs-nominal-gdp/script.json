@@ -45,7 +45,7 @@
     {
       "key": "how",
       "frames": 240,
-      "vo": "In Q3, nominal grew 5.6% at an annual rate, real 3.4%. The gap was mostly higher prices.",
+      "vo": "In Q3, nominal grew 5.6% at an annual rate, real 3.4%. The gap reflects higher prices.",
       "captions": [
         {
           "text": "In Q3, nominal grew 5.6% at an annual rate,",
@@ -58,7 +58,7 @@
           "to": 154
         },
         {
-          "text": "The gap was mostly higher prices.",
+          "text": "The gap reflects higher prices.",
           "from": 154,
           "to": 234
         }
@@ -121,7 +121,7 @@
       "value": 2.2,
       "unit": "percentage points",
       "period": "Q3 2026",
-      "source": "Computed: 5.6 − 3.4 (nominal minus real); BEA did not state the price index in the release, so shown as 'mostly prices'"
+      "source": "Computed: 5.6 − 3.4 (nominal minus real). Nominal growth ≈ real growth + price growth, so the gap is the change in prices (GDP price index, approx.)"
     },
     "nextEstimate": {
       "value": "2026-11-25",
