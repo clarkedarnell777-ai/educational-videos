@@ -99,7 +99,7 @@ export const S4Real: React.FC<SceneProps> = ({captions, showSafeZone}) => {
         }}
       >
         <Row label="Raise" value={RAISE} sign="+" color={COLORS.accent} delay={69} />
-        <Row label="Inflation" value={INFLATION} sign="−" color="#ef4444" delay={90} offset={RAISE - INFLATION} />
+        <Row label="Inflation" value={INFLATION} sign="−" color={COLORS.muted} delay={90} offset={RAISE - INFLATION} />
         <div
           style={{
             borderTop: `3px solid ${COLORS.border}`,
