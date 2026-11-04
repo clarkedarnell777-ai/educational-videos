@@ -1,0 +1,165 @@
+{
+  "id": "CashFlowVsNetWorth",
+  "title": "Worth $200K, Still Short on Bills? Cash Flow vs Net Worth",
+  "productionDate": "2026-11-04",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 138,
+      "vo": "A six-figure net worth can't pay your electric bill.",
+      "captions": [
+        {
+          "text": "A six-figure net worth",
+          "from": 8,
+          "to": 63
+        },
+        {
+          "text": "can't pay your electric bill.",
+          "from": 63,
+          "to": 132
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 198,
+      "vo": "Net worth is a snapshot: own minus owe. Cash flow is the movie: money in, money out.",
+      "captions": [
+        {
+          "text": "Net worth is a snapshot: own minus owe.",
+          "from": 8,
+          "to": 95
+        },
+        {
+          "text": "Cash flow is the movie:",
+          "from": 95,
+          "to": 149
+        },
+        {
+          "text": "money in, money out.",
+          "from": 149,
+          "to": 192
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 168,
+      "vo": "Say you have 230,000 in home equity, but overspend 300 dollars monthly.",
+      "captions": [
+        {
+          "text": "Say you have $230,000 in home equity,",
+          "from": 8,
+          "to": 103
+        },
+        {
+          "text": "but overspend $300 monthly.",
+          "from": 103,
+          "to": 162
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 294,
+      "vo": "Fed data: median net worth, about 216,000. Median bank balance, 8,200. Nearly one in five families reported late loan payments.",
+      "captions": [
+        {
+          "text": "Fed data: median net worth, about $216,000.",
+          "from": 8,
+          "to": 109
+        },
+        {
+          "text": "Median bank balance, $8,200.",
+          "from": 109,
+          "to": 187
+        },
+        {
+          "text": "Nearly one in five families",
+          "from": 187,
+          "to": 243
+        },
+        {
+          "text": "reported late loan payments.",
+          "from": 243,
+          "to": 288
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 150,
+      "vo": "This month, subtract spending from income. Track that number.",
+      "captions": [
+        {
+          "text": "This month, subtract spending from income.",
+          "from": 8,
+          "to": 99
+        },
+        {
+          "text": "Track that number.",
+          "from": 99,
+          "to": 144
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "medianNetWorth": {
+      "value": 215900,
+      "unit": "USD (2025 dollars)",
+      "period": "2025 survey",
+      "source": "Federal Reserve press release, survey year 2025, published 2026-10-09; https://federalreserve.gov/newsevents/pressreleases/other20261009a.htm"
+    },
+    "medianBalance": {
+      "value": 8200,
+      "unit": "USD (2025 dollars)",
+      "period": "2025 survey; median among the 98.7% of families holding transaction accounts",
+      "source": "Federal Reserve, Changes in U.S. Family Finances from 2022 to 2025 (Survey of Consumer Finances), survey year 2025, published 2026-10-09; https://www.federalreserve.gov/publications/files/scf26.pdf"
+    },
+    "latePayments": {
+      "value": 19.6,
+      "unit": "% of families reporting late loan payments",
+      "period": "2025 survey",
+      "source": "Federal Reserve, Changes in U.S. Family Finances from 2022 to 2025 (Survey of Consumer Finances), survey year 2025, published 2026-10-09; https://www.federalreserve.gov/publications/files/scf26.pdf. Uses the Fed's wording 'families'; base (all families or only families with debt) not confirmed."
+    },
+    "medianHomeEquity": {
+      "value": 230000,
+      "unit": "USD (2025 dollars)",
+      "period": "2025 survey; median net housing value among homeowners",
+      "source": "Federal Reserve press release, survey year 2025, published 2026-10-09; https://federalreserve.gov/newsevents/pressreleases/other20261009a.htm"
+    },
+    "exampleIncome": {
+      "value": 6500,
+      "unit": "USD per month",
+      "period": "Illustrative",
+      "source": "Illustrative, not a real family"
+    },
+    "exampleSpending": {
+      "value": 6800,
+      "unit": "USD per month",
+      "period": "Illustrative",
+      "source": "Illustrative, not a real family. -$300/mo computed in S3How.tsx"
+    }
+  },
+  "notes": [
+    "The S4 figures are separate survey measures, not one family.",
+    "'Bank balance' simplifies 'transaction accounts' (checking, savings, money market, call accounts, prepaid debit cards)."
+  ],
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko/ElevenLabs eleven_v4_turbo clips (default voice) totalled 31.40 s after silence trim. At the 1.10 tempo cap that is 28.54 s against a 27.2 s budget, so the S5 clip would end at about 31.34 s. Per rules, words were not cut and the video is built without audio.",
+    "clipSecondsTrimmed": [
+      2.925,
+      7.269,
+      5.822,
+      11.436,
+      3.943
+    ]
+  }
+}

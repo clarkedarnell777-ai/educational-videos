@@ -1,0 +1,184 @@
+{
+  "id": "SbaCoverageRule",
+  "title": "Buying a Business? Your Forecast Won't Save the Deal",
+  "productionDate": "2026-11-02",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 172,
+      "vo": "Buying a business with an SBA loan? Your forecast likely can't save the deal.",
+      "captions": [
+        {
+          "text": "Buying a business with an SBA loan?",
+          "from": 9,
+          "to": 80
+        },
+        {
+          "text": "Your forecast likely can't save the deal.",
+          "from": 80,
+          "to": 157
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 185,
+      "vo": "Since October first, most buyers need 1.25 times coverage from past earnings.",
+      "captions": [
+        {
+          "text": "Since October first,",
+          "from": 12,
+          "to": 43
+        },
+        {
+          "text": "most buyers need 1.25 times coverage",
+          "from": 43,
+          "to": 136
+        },
+        {
+          "text": "from past earnings.",
+          "from": 136,
+          "to": 173
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 174,
+      "vo": "Every 100 dollars of loan payments needs 125 dollars of earnings.",
+      "captions": [
+        {
+          "text": "Every $100 of loan payments",
+          "from": 12,
+          "to": 91
+        },
+        {
+          "text": "needs $125 of earnings.",
+          "from": 91,
+          "to": 162
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 211,
+      "vo": "A 500,000 dollar deal needs 50,000 down. Seller financing covers half, at most.",
+      "captions": [
+        {
+          "text": "A $500,000 deal needs $50,000 down.",
+          "from": 12,
+          "to": 116
+        },
+        {
+          "text": "Seller financing covers half, at most.",
+          "from": 116,
+          "to": 199
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 206,
+      "vo": "Before any offer, divide last year's earnings by the payments. Under 1.25? Renegotiate.",
+      "captions": [
+        {
+          "text": "Before any offer,",
+          "from": 12,
+          "to": 49
+        },
+        {
+          "text": "divide last year's earnings by the payments.",
+          "from": 49,
+          "to": 136
+        },
+        {
+          "text": "Under 1.25? Renegotiate.",
+          "from": 136,
+          "to": 204
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "effectiveDate": {
+      "value": "2026-10-01",
+      "source": "SBA Information Notice 5000-880695 (copy via Coleman Report, published 2026-08-14): SOP 50 10 8.1 effective Oct 1, 2026, for applications receiving an SBA loan number on or after that date; https://colemanreport.com/wp-content/uploads/2026/08/SBA-Information-Notice-5000-880695-Issuance-of-SOP-50-10-8.1.pdf"
+    },
+    "coverageNew": {
+      "value": 1.25,
+      "unit": "x debt service coverage, minimum",
+      "period": "Initial acquisitions and owner buyouts, from Oct 1, 2026",
+      "source": "Starfield & Smith (Katie O'Brien), change of ownership under SOP 50 10 8.1, published 2026-09-09; https://starfieldsmith.com/2026/09/best-practices-change-of-ownership-transactions-under-sop-50-10-8-1-what-sba-lenders-need-to-know/. Re-read 2026-11-04. Also PilieroMazza, 2026-08-24; Matthews, 2026-09-25. SOP text itself not read (see notes)."
+    },
+    "coverageOld": {
+      "value": 1.15,
+      "unit": "x debt service coverage, minimum",
+      "period": "Before Oct 1, 2026",
+      "source": "Starfield & Smith, 2026-09-09; PilieroMazza, published 2026-08-24, https://www.pilieromazza.com/?p=27593; Matthews, published 2026-09-25, https://www.matthews.com/insights/new-sba-lending-requirements-take-effect-october-first"
+    },
+    "coverageBasis": {
+      "value": "Historical or adjusted historical earnings (last fiscal year-end or two-year average); projections cannot be used to meet it",
+      "source": "Starfield & Smith (Katie O'Brien), change of ownership under SOP 50 10 8.1, published 2026-09-09; https://starfieldsmith.com/2026/09/best-practices-change-of-ownership-transactions-under-sop-50-10-8-1-what-sba-lenders-need-to-know/"
+    },
+    "equityMinPct": {
+      "value": 10,
+      "unit": "% of total project costs",
+      "period": "Initial acquisitions, from Oct 1, 2026",
+      "source": "Starfield & Smith (Katie O'Brien), change of ownership under SOP 50 10 8.1, published 2026-09-09; https://starfieldsmith.com/2026/09/best-practices-change-of-ownership-transactions-under-sop-50-10-8-1-what-sba-lenders-need-to-know/"
+    },
+    "sellerMaxShare": {
+      "value": 0.5,
+      "unit": "share of required equity",
+      "period": "From Oct 1, 2026",
+      "source": "Starfield & Smith (Katie O'Brien), change of ownership under SOP 50 10 8.1, published 2026-09-09; https://starfieldsmith.com/2026/09/best-practices-change-of-ownership-transactions-under-sop-50-10-8-1-what-sba-lenders-need-to-know/. The limit covers seller notes, standby loans and minority investments together."
+    },
+    "examplePayments": {
+      "value": 100,
+      "unit": "USD",
+      "period": "Illustrative",
+      "source": "Illustrative. Earnings needed $125 and cushion $25 computed in S3How.tsx"
+    },
+    "exampleDeal": {
+      "value": 500000,
+      "unit": "USD",
+      "period": "Illustrative",
+      "source": "Illustrative, assumes total project cost equals price. $50,000 equity, $450,000 financed and $25,000 / $25,000 split computed in S4Real.tsx"
+    }
+  },
+  "notes": [
+    "Coleman Report webinar blurb (2026-08-19) conflicts on projections and equity; script follows Starfield & Smith, PilieroMazza and Matthews and says 'likely'. Check SOP Appendix 15 before publishing.",
+    "'Most buyers' means initial acquisitions and owner buyouts; business expansions stay at 1.15x."
+  ],
+  "voice": {
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.06,
+    "clipSeconds": [
+      4.731,
+      5.179,
+      4.806,
+      6.049,
+      6.206
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      5.733,
+      11.5,
+      16.9,
+      23.533
+    ],
+    "file": "public/audio/2026-11-02-sba-coverage-rule/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14.0 LUFS, -1.5 dBTP",
+    "transcriptionCheck": "All five clips matched the script (Speko audio.transcribe)"
+  }
+}
