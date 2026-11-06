@@ -1,0 +1,177 @@
+{
+  "id": "PayVsInflation",
+  "title": "Your Pay Went Up. Your Buying Power Didn't.",
+  "productionDate": "2026-11-05",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 165,
+      "vo": "Average pay rose 3 percent this past year. Workers still lost ground.",
+      "captions": [
+        {
+          "text": "Average pay rose 3% this past year.",
+          "from": 6,
+          "to": 91
+        },
+        {
+          "text": "Workers still lost ground.",
+          "from": 91,
+          "to": 159
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 146,
+      "vo": "Nominal pay is your paycheck. Real pay is what it buys.",
+      "captions": [
+        {
+          "text": "Nominal pay is your paycheck.",
+          "from": 12,
+          "to": 72
+        },
+        {
+          "text": "Real pay is what it buys.",
+          "from": 72,
+          "to": 143
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 224,
+      "vo": "Hourly pay rose 3 percent through September. Prices rose 3.7. So real pay fell.",
+      "captions": [
+        {
+          "text": "Hourly pay rose 3% through September.",
+          "from": 12,
+          "to": 98
+        },
+        {
+          "text": "Prices rose 3.7%.",
+          "from": 98,
+          "to": 157
+        },
+        {
+          "text": "So real pay fell.",
+          "from": 157,
+          "to": 221
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 307,
+      "vo": "Say you earn 60,000. A 3 percent raise adds 1,800. Keeping up took 2,220. You're 420 short.",
+      "captions": [
+        {
+          "text": "Say you earn $60,000.",
+          "from": 12,
+          "to": 68
+        },
+        {
+          "text": "A 3% raise adds $1,800.",
+          "from": 68,
+          "to": 158
+        },
+        {
+          "text": "Keeping up took $2,220.",
+          "from": 158,
+          "to": 240
+        },
+        {
+          "text": "You're $420 short.",
+          "from": 240,
+          "to": 304
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 106,
+      "vo": "At your next review, compare your raise to inflation.",
+      "captions": [
+        {
+          "text": "At your next review,",
+          "from": 12,
+          "to": 44
+        },
+        {
+          "text": "compare your raise to inflation.",
+          "from": 44,
+          "to": 106
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "wageGrowth": {
+      "value": 3.0,
+      "unit": "% change, average hourly earnings, all private employees",
+      "period": "Sep 2025 to Sep 2026 (preliminary)",
+      "source": "BLS, Real Earnings — September 2026, published 2026-10-14; https://www.bls.gov/news.release/archives/realer_10142026.htm (current release page re-read 2026-11-06); also BLS Employment Situation Sep 2026, published 2026-10-02 ($37.81/hr)"
+    },
+    "cpiGrowth": {
+      "value": 3.7,
+      "unit": "% change, CPI-U all items, not seasonally adjusted",
+      "period": "Sep 2025 to Sep 2026",
+      "source": "BLS, Consumer Price Index — September 2026, published 2026-10-14; https://www.bls.gov/news.release/archives/cpi_10142026.htm; confirmed in BLS, Real Earnings — September 2026, published 2026-10-14; https://www.bls.gov/news.release/archives/realer_10142026.htm (current release page re-read 2026-11-06)"
+    },
+    "realHourly": {
+      "value": -0.7,
+      "unit": "% change, real average hourly earnings, all employees",
+      "period": "Sep 2025 to Sep 2026",
+      "source": "BLS, Real Earnings — September 2026, published 2026-10-14; https://www.bls.gov/news.release/archives/realer_10142026.htm (current release page re-read 2026-11-06); BLS The Economics Daily, published 2026-10-20, https://www.bls.gov/opub/ted/2026/real-average-hourly-earnings-decreased-0-7-percent-from-september-2025-to-september-2026.htm. Check: 1.030/1.037 − 1 = -0.68% (rounded inputs)"
+    },
+    "exampleSalary": {
+      "value": 60000,
+      "unit": "USD/yr",
+      "period": "Illustrative",
+      "source": "Illustrative. Raise $1,800 (3.0%), amount needed to keep pace $2,220 (3.7%), gap $420 computed in S4Real.tsx; ignores taxes"
+    }
+  },
+  "notes": [
+    "Refresh check 2026-11-06: October average hourly earnings came out Nov 6 (+0.4% m/m) but October CPI and Real Earnings are not due until Nov 10, so September remains the newest matched pay-vs-prices pair.",
+    "Averages for private employees; individual raises and inflation vary. The gap is largely energy (gasoline +34.2%, core CPI +2.6% over the year). Real weekly earnings fell only 0.1% because hours rose."
+  ],
+  "voice": {
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.06,
+    "rawClipSeconds": [
+      4.76,
+      4.088,
+      6.85,
+      9.792,
+      2.959
+    ],
+    "clipSeconds": [
+      4.49,
+      3.857,
+      6.462,
+      9.237,
+      2.792
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      5.5,
+      9.967,
+      17.033,
+      26.867
+    ],
+    "narrationEndsSeconds": 29.658,
+    "file": "public/audio/2026-11-05-pay-vs-inflation/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14.0 LUFS, -1.5 dBTP",
+    "transcriptionCheck": "All five clips matched the script, every number correct (Speko audio.transcribe, 2026-11-06)"
+  }
+}
