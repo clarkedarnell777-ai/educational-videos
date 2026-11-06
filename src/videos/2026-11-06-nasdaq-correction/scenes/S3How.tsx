@@ -19,9 +19,10 @@ const fmt = (v: number) => v.toLocaleString('en-US', {minimumFractionDigits: 2, 
 export const S3How: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const line = useDraw(STAGGER * 2, 60);
   const peak = useSpring(STAGGER * 2);
-  const last = useSpring(86); // "Thursday, it ended about 12% below."
-  const threshold = useDraw(96, 24);
-  const bracket = useDraw(112, 24);
+  const belowAt = captions[1].from; // "By Thursday, it was about 12% below."
+  const last = useSpring(belowAt);
+  const threshold = useDraw(belowAt + 10, 24);
+  const bracket = useDraw(belowAt + 26, 24);
   const first = pts[0];
   const end = pts[pts.length - 1];
   const bx = W + 40; // bracket x
@@ -79,9 +80,9 @@ export const S3How: React.FC<SceneProps> = ({captions, showSafeZone}) => {
         </svg>
       </div>
       <div style={{position: 'absolute', right: 0, top: 560, width: 240, textAlign: 'right'}}>
-        <Enter delay={120}>
+        <Enter delay={belowAt + 34}>
           <div style={{fontSize: 56, fontWeight: 800, color: COLORS.accent}}>
-            <CountUp to={DRAWDOWN_PCT} start={120} duration={24} decimals={1} suffix="%" />
+            <CountUp to={DRAWDOWN_PCT} start={belowAt + 34} duration={24} decimals={1} suffix="%" />
           </div>
           <div
             style={{

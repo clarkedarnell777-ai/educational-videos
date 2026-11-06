@@ -50,7 +50,9 @@ export const S2Explain: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const axis = useDraw(STAGGER * 2, 30);
   const peak = useSpring(STAGGER * 2);
   // A marker slides down the ruler, past −10% and on toward −20%, in step with the captions.
-  const depth = interpolate(frame, [40, 130, 175], [0, CORRECTION + 1, BEAR], {
+  const tenAt = captions[1].from; // "of 10% or more from a high."
+  const twentyAt = captions[2].from; // "Twenty percent: a bear market."
+  const depth = interpolate(frame, [40, tenAt + 50, twentyAt + 30], [0, CORRECTION + 1, BEAR], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
@@ -71,8 +73,8 @@ export const S2Explain: React.FC<SceneProps> = ({captions, showSafeZone}) => {
               Record high
             </text>
           </g>
-          <Level pct={CORRECTION} start={64} color={COLORS.accent} title="Correction" sub="10% or more below the high" />
-          <Level pct={BEAR} start={130} color={COLORS.muted} title="Bear market" sub="20% or more below the high" />
+          <Level pct={CORRECTION} start={tenAt} color={COLORS.accent} title="Correction" sub="10% or more below the high" />
+          <Level pct={BEAR} start={twentyAt} color={COLORS.muted} title="Bear market" sub="20% or more below the high" />
           <circle cx={X_AXIS} cy={yAt(depth)} r={14} fill={COLORS.text} opacity={interpolate(frame, [36, 46], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
         </svg>
       </div>

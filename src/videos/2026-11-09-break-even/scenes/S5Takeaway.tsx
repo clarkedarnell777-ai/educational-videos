@@ -10,7 +10,6 @@ import type {SceneProps} from './types';
 const APPLICATIONS = data.figures.applications.value; // 534,947
 const FORMATIONS = data.figures.projectedFormations.value; // 29,022
 const ONE_IN = Math.round(APPLICATIONS / FORMATIONS); // 18 (computed)
-const FIRST_AT = 128; // "Find your break-even first."
 
 const Person: React.FC<{lit: boolean; delay: number}> = ({lit, delay}) => {
   const s = useSpring(delay);
@@ -25,7 +24,7 @@ const Person: React.FC<{lit: boolean; delay: number}> = ({lit, delay}) => {
 
 export const S5Takeaway: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const people = Array.from({length: ONE_IN}, (_, i) => i);
-  const first = useSpring(FIRST_AT);
+  const first = useSpring(captions[2].from); // "Find your break-even first."
   return (
     <SceneFrame captions={captions} showSafeZone={showSafeZone} background={<Particles count={12} />}>
       <Enter delay={0}>

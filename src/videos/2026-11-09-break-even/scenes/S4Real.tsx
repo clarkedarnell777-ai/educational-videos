@@ -14,8 +14,6 @@ const LEFT = PRICE - UNIT_COST; // $3 (computed)
 const CUPS = FIXED / LEFT; // 1,000 (computed)
 const PER_DAY = Math.ceil(CUPS / DAYS); // 34 (computed, rounded up)
 
-const LEFT_AT = 96; // "$3 left per cup."
-const RESULT_AT = 154; // "That's 1,000 cups a month."
 const BAR_W = 860;
 
 const Card: React.FC<{delay: number; children: React.ReactNode}> = ({delay, children}) => {
@@ -38,6 +36,8 @@ const Card: React.FC<{delay: number; children: React.ReactNode}> = ({delay, chil
 
 export const S4Real: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const frame = useCurrentFrame();
+  const LEFT_AT = captions[1].from; // "$3 left per cup."
+  const RESULT_AT = captions[2].from; // "That's 1,000 cups a month."
   const split = interpolate(frame, [LEFT_AT, LEFT_AT + 24], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const leftLabel = useSpring(LEFT_AT + 10);
   const perDay = useSpring(RESULT_AT + 40);

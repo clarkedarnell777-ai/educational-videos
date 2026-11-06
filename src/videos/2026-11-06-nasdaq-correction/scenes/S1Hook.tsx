@@ -13,8 +13,9 @@ const {pts, d} = layout(W, H, 24000, 27800);
 export const S1Hook: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const frame = useCurrentFrame();
   const draw = useDraw(STAGGER * 2, 50);
-  const drop = useSpring(72);
-  const pct = interpolate(frame, [72, 108], [0, DAY_PCT], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const dropAt = captions[0].from + 22; // "5.5%" is spoken here
+  const drop = useSpring(dropAt);
+  const pct = interpolate(frame, [dropAt, dropAt + 36], [0, DAY_PCT], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const last = pts[pts.length - 1];
   return (
     <SceneFrame captions={captions} showSafeZone={showSafeZone}>

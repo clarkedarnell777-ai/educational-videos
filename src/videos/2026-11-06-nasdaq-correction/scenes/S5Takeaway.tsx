@@ -6,11 +6,9 @@ import {Kicker, SceneFrame, SourceTag} from '../../../shared/components/SceneFra
 import {COLORS, STAGGER} from '../../../shared/theme';
 import type {SceneProps} from './types';
 
-const QUESTION_AT = 70; // "when will I actually need this money?"
-
 export const S5Takeaway: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const card = useSpring(STAGGER * 2);
-  const question = useSpring(QUESTION_AT);
+  const question = useSpring(captions[1].from); // "when will I actually need this money?"
   return (
     <SceneFrame captions={captions} showSafeZone={showSafeZone} background={<Particles count={12} />}>
       <Enter delay={0}>

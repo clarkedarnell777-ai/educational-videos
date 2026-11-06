@@ -10,96 +10,96 @@
   "scenes": [
     {
       "key": "hook",
-      "frames": 168,
+      "frames": 162,
       "vo": "Over half a million Americans applied to start a business in September.",
       "captions": [
         {
           "text": "Over half a million Americans",
-          "from": 8,
-          "to": 76
+          "from": 9,
+          "to": 63
         },
         {
           "text": "applied to start a business in September.",
-          "from": 76,
-          "to": 162
+          "from": 63,
+          "to": 141
         }
       ]
     },
     {
       "key": "explain",
-      "frames": 156,
+      "frames": 144,
       "vo": "Break-even is the point where sales cover every cost.",
       "captions": [
         {
           "text": "Break-even is the point",
-          "from": 8,
-          "to": 66
+          "from": 11,
+          "to": 50
         },
         {
           "text": "where sales cover every cost.",
-          "from": 66,
-          "to": 150
+          "from": 50,
+          "to": 122
         }
       ]
     },
     {
       "key": "how",
-      "frames": 186,
+      "frames": 174,
       "vo": "Divide monthly fixed costs by what each sale leaves after its own cost.",
       "captions": [
         {
           "text": "Divide monthly fixed costs",
-          "from": 8,
-          "to": 76
+          "from": 10,
+          "to": 61
         },
         {
           "text": "by what each sale leaves after its own cost.",
-          "from": 76,
-          "to": 180
+          "from": 61,
+          "to": 157
         }
       ]
     },
     {
       "key": "real",
-      "frames": 246,
+      "frames": 252,
       "vo": "Illustrative: 3,000 dollars in monthly costs, 3 dollars left per cup. That's 1,000 cups a month.",
       "captions": [
         {
           "text": "Illustrative: $3,000 in monthly costs,",
-          "from": 8,
-          "to": 96
+          "from": 9,
+          "to": 117
         },
         {
           "text": "$3 left per cup.",
-          "from": 96,
-          "to": 154
+          "from": 117,
+          "to": 177
         },
         {
           "text": "That's 1,000 cups a month.",
-          "from": 154,
-          "to": 240
+          "from": 177,
+          "to": 252
         }
       ]
     },
     {
       "key": "takeaway",
-      "frames": 192,
+      "frames": 216,
       "vo": "Census expects about 1 in 18 to become employers within a year. Find your break-even first.",
       "captions": [
         {
           "text": "Census expects about 1 in 18",
-          "from": 8,
-          "to": 66
+          "from": 11,
+          "to": 77
         },
         {
           "text": "to become employers within a year.",
-          "from": 66,
-          "to": 128
+          "from": 77,
+          "to": 146
         },
         {
           "text": "Find your break-even first.",
-          "from": 128,
-          "to": 192
+          "from": 146,
+          "to": 212
         }
       ]
     }
@@ -160,7 +160,32 @@
     "The coffee cart is illustrative; real break-even also depends on taxes, owner pay and seasonality."
   ],
   "voice": {
-    "status": "not generated",
-    "reason": "Built without audio in an interactive session; captions timed by word share."
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.0,
+    "clipSeconds": [
+      3.792,
+      3.244,
+      4.434,
+      7.573,
+      6.249
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      5.3,
+      9.7,
+      15.1,
+      23.1
+    ],
+    "narrationEndsSeconds": 29.349,
+    "file": "public/audio/2026-11-09-break-even/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14.0 LUFS, -1.5 dBTP",
+    "captionTiming": "Caption chunks start at transcribed word timestamps (Speko audio.transcribe)",
+    "transcriptionCheck": "All five clips matched the script, every number and term correct (Speko audio.transcribe)"
   }
 }

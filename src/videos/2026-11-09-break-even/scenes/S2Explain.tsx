@@ -24,8 +24,9 @@ export const S2Explain: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const axes = useDraw(STAGGER, 20);
   const fixed = useDraw(STAGGER * 2, 24);
   const cost = useDraw(STAGGER * 4, 30);
-  const revenue = useDraw(66, 36); // "where sales cover every cost."
-  const point = useSpring(100);
+  const coverAt = captions[1].from; // "where sales cover every cost."
+  const revenue = useDraw(coverAt, 36);
+  const point = useSpring(coverAt + 34);
   const dx = X_END - L;
   return (
     <SceneFrame captions={captions} showSafeZone={showSafeZone}>

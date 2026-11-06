@@ -12,7 +12,7 @@ import {S5Takeaway} from './scenes/S5Takeaway';
 import type {SceneProps} from './scenes/types';
 
 export type NasdaqCorrectionProps = {
-  /** Set true once public/2026-11-06-nasdaq-correction/voiceover.mp3 exists (not generated yet: see script.json → voice). */
+  /** Unused here: the voiceover below always plays. */
   withAudio: boolean;
   /** Draw the safe-zone outline (for review only, never for the final render). */
   showSafeZone: boolean;
@@ -26,7 +26,7 @@ const SCENES: Record<string, React.FC<SceneProps>> = {
   takeaway: S5Takeaway,
 };
 
-export const NasdaqCorrection: React.FC<NasdaqCorrectionProps> = ({withAudio, showSafeZone}) => {
+export const NasdaqCorrection: React.FC<NasdaqCorrectionProps> = ({showSafeZone}) => {
   return (
     <AbsoluteFill style={{backgroundColor: COLORS.bg}}>
       <TransitionSeries>
@@ -47,7 +47,7 @@ export const NasdaqCorrection: React.FC<NasdaqCorrectionProps> = ({withAudio, sh
           );
         })}
       </TransitionSeries>
-      {withAudio ? <Audio src={staticFile('2026-11-06-nasdaq-correction/voiceover.mp3')} /> : null}
+      <Audio src={staticFile('audio/2026-11-06-nasdaq-correction/voiceover.wav')} />
     </AbsoluteFill>
   );
 };

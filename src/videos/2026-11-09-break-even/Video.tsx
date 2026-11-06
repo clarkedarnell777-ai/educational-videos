@@ -12,7 +12,7 @@ import {S5Takeaway} from './scenes/S5Takeaway';
 import type {SceneProps} from './scenes/types';
 
 export type BreakEvenProps = {
-  /** Set true once public/2026-11-09-break-even/voiceover.mp3 exists (not generated yet: see script.json → voice). */
+  /** Unused here: the voiceover below always plays. */
   withAudio: boolean;
   /** Draw the safe-zone outline (for review only, never for the final render). */
   showSafeZone: boolean;
@@ -26,7 +26,7 @@ const SCENES: Record<string, React.FC<SceneProps>> = {
   takeaway: S5Takeaway,
 };
 
-export const BreakEven: React.FC<BreakEvenProps> = ({withAudio, showSafeZone}) => {
+export const BreakEven: React.FC<BreakEvenProps> = ({showSafeZone}) => {
   return (
     <AbsoluteFill style={{backgroundColor: COLORS.bg}}>
       <TransitionSeries>
@@ -47,7 +47,7 @@ export const BreakEven: React.FC<BreakEvenProps> = ({withAudio, showSafeZone}) =
           );
         })}
       </TransitionSeries>
-      {withAudio ? <Audio src={staticFile('2026-11-09-break-even/voiceover.mp3')} /> : null}
+      <Audio src={staticFile('audio/2026-11-09-break-even/voiceover.wav')} />
     </AbsoluteFill>
   );
 };

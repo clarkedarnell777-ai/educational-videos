@@ -10,56 +10,56 @@
   "scenes": [
     {
       "key": "hook",
-      "frames": 150,
+      "frames": 144,
       "vo": "The Nasdaq fell 5.5 percent Thursday, into a correction.",
       "captions": [
         {
           "text": "The Nasdaq fell 5.5% Thursday,",
-          "from": 8,
-          "to": 82
+          "from": 9,
+          "to": 102
         },
         {
           "text": "into a correction.",
-          "from": 82,
+          "from": 102,
           "to": 144
         }
       ]
     },
     {
       "key": "explain",
-      "frames": 198,
+      "frames": 216,
       "vo": "A correction usually means a drop of 10 percent or more from a high. Twenty percent: a bear market.",
       "captions": [
         {
           "text": "A correction usually means a drop",
-          "from": 8,
-          "to": 64
+          "from": 11,
+          "to": 62
         },
         {
           "text": "of 10% or more from a high.",
-          "from": 64,
-          "to": 130
+          "from": 62,
+          "to": 146
         },
         {
           "text": "Twenty percent: a bear market.",
-          "from": 130,
-          "to": 192
+          "from": 146,
+          "to": 216
         }
       ]
     },
     {
       "key": "how",
-      "frames": 192,
-      "vo": "Its record close was October 6. Thursday, it ended about 12 percent below.",
+      "frames": 186,
+      "vo": "Its record close was October 6. By Thursday, it was about 12 percent below.",
       "captions": [
         {
           "text": "Its record close was October 6.",
-          "from": 8,
-          "to": 86
+          "from": 14,
+          "to": 95
         },
         {
-          "text": "Thursday, it ended about 12% below.",
-          "from": 86,
+          "text": "By Thursday, it was about 12% below.",
+          "from": 95,
           "to": 186
         }
       ]
@@ -71,35 +71,35 @@
       "captions": [
         {
           "text": "Illustrative: $10,000 tracking the Nasdaq",
-          "from": 8,
-          "to": 96
+          "from": 11,
+          "to": 110
         },
         {
           "text": "at its peak",
-          "from": 96,
-          "to": 128
+          "from": 110,
+          "to": 134
         },
         {
           "text": "would be about $8,800 now.",
-          "from": 128,
-          "to": 210
+          "from": 134,
+          "to": 216
         }
       ]
     },
     {
       "key": "takeaway",
-      "frames": 192,
-      "vo": "Before reacting, ask: when will I actually need this money?",
+      "frames": 186,
+      "vo": "Before you react, ask: when will I actually need this money?",
       "captions": [
         {
-          "text": "Before reacting, ask:",
-          "from": 8,
-          "to": 70
+          "text": "Before you react, ask:",
+          "from": 11,
+          "to": 80
         },
         {
           "text": "when will I actually need this money?",
-          "from": 70,
-          "to": 192
+          "from": 80,
+          "to": 155
         }
       ]
     }
@@ -265,7 +265,33 @@
     "S4 is a price-index illustration: no fees, dividends or taxes."
   ],
   "voice": {
-    "status": "not generated",
-    "reason": "Built without audio in an interactive session; captions timed by word share."
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.0,
+    "clipSeconds": [
+      4.115,
+      6.722,
+      5.516,
+      6.573,
+      4.37
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      4.7,
+      11.622,
+      17.338,
+      24.111
+    ],
+    "narrationEndsSeconds": 28.482,
+    "file": "public/audio/2026-11-06-nasdaq-correction/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14.0 LUFS, -1.5 dBTP",
+    "captionTiming": "Caption chunks start at transcribed word timestamps (Speko audio.transcribe)",
+    "transcriptionCheck": "All five clips matched the script, every number and term correct (Speko audio.transcribe)",
+    "note": "S3 and S5 clips were regenerated: the first S3 take paused after \"Thursday\" (heard as \"October 6th, Thursday\"), and the first S5 take transcribed as \"The four reacting\". Wording changed to \"By Thursday, it was...\" and \"Before you react, ask:\"."
   }
 }

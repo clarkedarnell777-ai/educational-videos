@@ -5,8 +5,6 @@ import {Kicker, SceneFrame, SourceTag} from '../../../shared/components/SceneFra
 import {COLORS, STAGGER} from '../../../shared/theme';
 import type {SceneProps} from './types';
 
-const DENOM_AT = 76; // "by what each sale leaves after its own cost."
-
 const Term: React.FC<{progress: number; color: string; children: React.ReactNode; note: string}> = ({
   progress,
   color,
@@ -20,6 +18,7 @@ const Term: React.FC<{progress: number; color: string; children: React.ReactNode
 );
 
 export const S3How: React.FC<SceneProps> = ({captions, showSafeZone}) => {
+  const DENOM_AT = captions[1].from; // "by what each sale leaves after its own cost."
   const card = useSpring(STAGGER);
   const numerator = useSpring(STAGGER * 2);
   const bar = useDraw(STAGGER * 4, 20);

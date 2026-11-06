@@ -9,13 +9,13 @@ import type {SceneProps} from './types';
 
 const START = data.figures.exampleStart.value; // $10,000 (illustrative)
 const NOW = START * (LAST / RECORD); // $8,809.82 (computed)
-const DROP_AT = 128; // "would be about $8,800 now."
 const BAR_W = 820;
 
 const money = (v: number) => `$${Math.round(v).toLocaleString('en-US')}`;
 
 export const S4Real: React.FC<SceneProps> = ({captions, showSafeZone}) => {
   const frame = useCurrentFrame();
+  const DROP_AT = captions[2].from; // "would be about $8,800 now."
   const card = useSpring(STAGGER * 2);
   const value = interpolate(frame, [DROP_AT, DROP_AT + 40], [START, NOW], {
     extrapolateLeft: 'clamp',
