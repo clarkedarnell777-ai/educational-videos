@@ -1,0 +1,297 @@
+{
+  "id": "NasdaqCorrection",
+  "title": "The Nasdaq Just Hit a Correction. What Does That Mean?",
+  "productionDate": "2026-11-06",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 144,
+      "vo": "The Nasdaq fell 5.5 percent Thursday, into a correction.",
+      "captions": [
+        {
+          "text": "The Nasdaq fell 5.5% Thursday,",
+          "from": 9,
+          "to": 102
+        },
+        {
+          "text": "into a correction.",
+          "from": 102,
+          "to": 144
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 216,
+      "vo": "A correction usually means a drop of 10 percent or more from a high. Twenty percent: a bear market.",
+      "captions": [
+        {
+          "text": "A correction usually means a drop",
+          "from": 11,
+          "to": 62
+        },
+        {
+          "text": "of 10% or more from a high.",
+          "from": 62,
+          "to": 146
+        },
+        {
+          "text": "Twenty percent: a bear market.",
+          "from": 146,
+          "to": 216
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 186,
+      "vo": "Its record close was October 6. By Thursday, it was about 12 percent below.",
+      "captions": [
+        {
+          "text": "Its record close was October 6.",
+          "from": 14,
+          "to": 95
+        },
+        {
+          "text": "By Thursday, it was about 12% below.",
+          "from": 95,
+          "to": 186
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 216,
+      "vo": "Illustrative: 10,000 dollars tracking the Nasdaq at its peak would be about 8,800 now.",
+      "captions": [
+        {
+          "text": "Illustrative: $10,000 tracking the Nasdaq",
+          "from": 11,
+          "to": 110
+        },
+        {
+          "text": "at its peak",
+          "from": 110,
+          "to": 134
+        },
+        {
+          "text": "would be about $8,800 now.",
+          "from": 134,
+          "to": 216
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 186,
+      "vo": "Before you react, ask: when will I actually need this money?",
+      "captions": [
+        {
+          "text": "Before you react, ask:",
+          "from": 11,
+          "to": 80
+        },
+        {
+          "text": "when will I actually need this money?",
+          "from": 80,
+          "to": 155
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "recordClose": {
+      "value": 27599.89,
+      "unit": "index points",
+      "period": "Close, Oct 6, 2026 (all-time high close in the series since 1971)",
+      "source": "Nasdaq OMX Group, NASDAQ Composite Index (NASDAQCOM) via FRED, Federal Reserve Bank of St. Louis; daily closes, retrieved 2026-11-06; https://fred.stlouisfed.org/series/NASDAQCOM"
+    },
+    "lastClose": {
+      "value": 24315.0,
+      "unit": "index points",
+      "period": "Close, Nov 5, 2026",
+      "source": "Nasdaq OMX Group, NASDAQ Composite Index (NASDAQCOM) via FRED, Federal Reserve Bank of St. Louis; daily closes, retrieved 2026-11-06; https://fred.stlouisfed.org/series/NASDAQCOM"
+    },
+    "priorClose": {
+      "value": 25736.51,
+      "unit": "index points",
+      "period": "Close, Nov 4, 2026",
+      "source": "Nasdaq OMX Group, NASDAQ Composite Index (NASDAQCOM) via FRED, Federal Reserve Bank of St. Louis; daily closes, retrieved 2026-11-06; https://fred.stlouisfed.org/series/NASDAQCOM"
+    },
+    "dayChangePct": {
+      "value": "computed",
+      "unit": "%",
+      "period": "Nov 4 to Nov 5, 2026 closes",
+      "source": "Computed in code: (24,315.00 / 25,736.51 − 1) × 100 = −5.52%"
+    },
+    "drawdownPct": {
+      "value": "computed",
+      "unit": "%",
+      "period": "Oct 6 to Nov 5, 2026 closes",
+      "source": "Computed in code: (24,315.00 / 27,599.89 − 1) × 100 = −11.90%"
+    },
+    "correctionThresholdPct": {
+      "value": 10,
+      "unit": "% below a recent high",
+      "period": "Convention",
+      "source": "Charles Schwab, 'Market Correction: What Does It Mean?' (no universal definition; 10%+ is the common convention); publication date not shown; https://www.schwab.com/learn/story/market-correction-what-does-it-mean"
+    },
+    "bearThresholdPct": {
+      "value": 20,
+      "unit": "% below a recent high",
+      "period": "Convention",
+      "source": "Charles Schwab, same page as above"
+    },
+    "exampleStart": {
+      "value": 10000,
+      "unit": "USD",
+      "period": "Illustrative",
+      "source": "Illustrative example"
+    },
+    "exampleNow": {
+      "value": "computed",
+      "unit": "USD",
+      "period": "Illustrative",
+      "source": "Computed in code: 10,000 × 24,315.00 / 27,599.89 = $8,809.82, shown as ≈$8,800; price index only, ignores fees and dividends"
+    },
+    "closes": {
+      "value": [
+        [
+          "2026-10-06",
+          27599.89
+        ],
+        [
+          "2026-10-07",
+          27538.69
+        ],
+        [
+          "2026-10-08",
+          27193.34
+        ],
+        [
+          "2026-10-09",
+          27366.17
+        ],
+        [
+          "2026-10-12",
+          27245.9
+        ],
+        [
+          "2026-10-13",
+          27204.38
+        ],
+        [
+          "2026-10-14",
+          26692.87
+        ],
+        [
+          "2026-10-15",
+          26713.03
+        ],
+        [
+          "2026-10-16",
+          26140.03
+        ],
+        [
+          "2026-10-19",
+          26430.89
+        ],
+        [
+          "2026-10-20",
+          26424.82
+        ],
+        [
+          "2026-10-21",
+          26702.86
+        ],
+        [
+          "2026-10-22",
+          26008.86
+        ],
+        [
+          "2026-10-23",
+          25955.34
+        ],
+        [
+          "2026-10-26",
+          26169.38
+        ],
+        [
+          "2026-10-27",
+          26477.81
+        ],
+        [
+          "2026-10-28",
+          26549.85
+        ],
+        [
+          "2026-10-29",
+          26184.72
+        ],
+        [
+          "2026-10-30",
+          25437.0
+        ],
+        [
+          "2026-11-02",
+          25164.36
+        ],
+        [
+          "2026-11-03",
+          25372.01
+        ],
+        [
+          "2026-11-04",
+          25736.51
+        ],
+        [
+          "2026-11-05",
+          24315.0
+        ]
+      ],
+      "unit": "index points",
+      "period": "Daily closes, Oct 6 to Nov 5, 2026",
+      "source": "Nasdaq OMX Group, NASDAQ Composite Index (NASDAQCOM) via FRED, Federal Reserve Bank of St. Louis; daily closes, retrieved 2026-11-06; https://fred.stlouisfed.org/series/NASDAQCOM"
+    }
+  },
+  "notes": [
+    "'Correction' and 'bear market' are conventions, not official definitions.",
+    "All figures are closing prices.",
+    "S4 is a price-index illustration: no fees, dividends or taxes."
+  ],
+  "voice": {
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.0,
+    "clipSeconds": [
+      4.115,
+      6.722,
+      5.516,
+      6.573,
+      4.37
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      4.7,
+      11.622,
+      17.338,
+      24.111
+    ],
+    "narrationEndsSeconds": 28.482,
+    "file": "public/audio/2026-11-06-nasdaq-correction/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14.0 LUFS, -1.5 dBTP",
+    "captionTiming": "Caption chunks start at transcribed word timestamps (Speko audio.transcribe)",
+    "transcriptionCheck": "All five clips matched the script, every number and term correct (Speko audio.transcribe)",
+    "note": "S3 and S5 clips were regenerated: the first S3 take paused after \"Thursday\" (heard as \"October 6th, Thursday\"), and the first S5 take transcribed as \"The four reacting\". Wording changed to \"By Thursday, it was...\" and \"Before you react, ask:\"."
+  }
+}
