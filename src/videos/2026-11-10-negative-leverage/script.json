@@ -1,0 +1,203 @@
+{
+  "id": "NegativeLeverage",
+  "title": "Can a Mortgage Make a Rental Lose Money?",
+  "productionDate": "2026-11-10",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 156,
+      "vo": "A loan should boost a rental's return. Right now, it can erase it.",
+      "captions": [
+        {
+          "text": "A loan should boost a rental's return.",
+          "from": 11,
+          "to": 83
+        },
+        {
+          "text": "Right now, it can erase it.",
+          "from": 83,
+          "to": 149
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 156,
+      "vo": "Cap rate: yearly income after expenses, divided by the price.",
+      "captions": [
+        {
+          "text": "Cap rate: yearly income after expenses,",
+          "from": 10,
+          "to": 103
+        },
+        {
+          "text": "divided by the price.",
+          "from": 103,
+          "to": 156
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 246,
+      "vo": "Your loan has one too: yearly payments over the loan. At 7.18 percent, that's about 8.1 percent.",
+      "captions": [
+        {
+          "text": "Your loan has one too:",
+          "from": 10,
+          "to": 58
+        },
+        {
+          "text": "yearly payments over the loan.",
+          "from": 58,
+          "to": 121
+        },
+        {
+          "text": "At 7.18%, that's about 8.1%.",
+          "from": 121,
+          "to": 246
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 252,
+      "vo": "Illustrative: a 6 percent cap rental, bought with 25 percent down, loses about 290 dollars a year.",
+      "captions": [
+        {
+          "text": "Illustrative: a 6% cap rental,",
+          "from": 10,
+          "to": 97
+        },
+        {
+          "text": "bought with 25% down,",
+          "from": 97,
+          "to": 163
+        },
+        {
+          "text": "loses about $290 a year.",
+          "from": 163,
+          "to": 252
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 138,
+      "vo": "Before you borrow, make sure the cap rate beats your loan's cost.",
+      "captions": [
+        {
+          "text": "Before you borrow,",
+          "from": 10,
+          "to": 46
+        },
+        {
+          "text": "make sure the cap rate beats your loan's cost.",
+          "from": 46,
+          "to": 136
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "rate30": {
+      "value": 7.18,
+      "unit": "% (30-year fixed, average)",
+      "period": "Week of Nov 5, 2026 (7.24% prior week; 6.22% a year earlier)",
+      "source": "Freddie Mac, Primary Mortgage Market Survey (PMMS), 30-year fixed-rate average, week of Nov 5, 2026, published 2026-11-05; https://www.freddiemac.com/pmms (also FRED MORTGAGE30US)"
+    },
+    "termMonths": {
+      "value": 360,
+      "unit": "months",
+      "period": "30-year fixed",
+      "source": "Standard 30-year term"
+    },
+    "examplePrice": {
+      "value": 300000,
+      "unit": "USD",
+      "period": "Illustrative",
+      "source": "Illustrative example"
+    },
+    "exampleNoi": {
+      "value": 18000,
+      "unit": "USD per year",
+      "period": "Illustrative",
+      "source": "Illustrative example (net operating income: rent minus operating expenses, before debt service)"
+    },
+    "exampleDownPct": {
+      "value": 25,
+      "unit": "% of price",
+      "period": "Illustrative",
+      "source": "Illustrative example"
+    },
+    "capRate": {
+      "value": "computed",
+      "unit": "%",
+      "period": "Illustrative",
+      "source": "Computed in code: 18,000 / 300,000 = 6.00%"
+    },
+    "monthlyPayment": {
+      "value": "computed",
+      "unit": "USD per month",
+      "period": "Illustrative",
+      "source": "Computed in code: standard amortization of $225,000 over 360 months at 7.18%/12 = $1,524.23"
+    },
+    "loanConstant": {
+      "value": "computed",
+      "unit": "%",
+      "period": "Illustrative",
+      "source": "Computed in code: 12 × 1,524.23 / 225,000 = 8.13%, shown as about 8.1%"
+    },
+    "cashFlow": {
+      "value": "computed",
+      "unit": "USD per year",
+      "period": "Illustrative, year 1, pre-tax",
+      "source": "Computed in code: 18,000 − 18,290.74 = −$290.74, spoken as 'about 290 dollars'"
+    },
+    "definitions": {
+      "value": "Cap rate = NOI / value; negative leverage (single-year test) = cap rate below the loan constant",
+      "unit": "",
+      "period": "Definitions",
+      "source": "PropertyMetrics (Robert Schmidt, CCIM), 'Negative Leverage: What You Should Know', updated 2026-10-13; https://propertymetrics.com/blog/negative-leverage/"
+    }
+  },
+  "notes": [
+    "PMMS is an owner-occupied, conventional, good-credit rate; investment-property loans are usually priced higher, so it is used only as a reference point.",
+    "'Loses' means negative pre-tax cash flow in year 1, not a total-return loss: payments also repay about $2,207 of principal in year 1 (computed), and closing costs, taxes, depreciation and appreciation are ignored.",
+    "At this down payment, zero cash flow needs a 6.10% cap rate (computed)."
+  ],
+  "voice": {
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.0,
+    "clipSeconds": [
+      4.195,
+      4.386,
+      7.459,
+      7.641,
+      3.716
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      5.1,
+      9.9,
+      17.7,
+      25.7
+    ],
+    "narrationEndsSeconds": 29.416,
+    "file": "public/audio/2026-11-10-negative-leverage/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14.0 LUFS, -1.5 dBTP",
+    "captionTiming": "Caption chunks start at transcribed word timestamps (Speko audio.transcribe)",
+    "transcriptionCheck": "All five clips matched the script, every number and term correct ('loan's' came back as the homophone 'loans') (Speko audio.transcribe)"
+  }
+}

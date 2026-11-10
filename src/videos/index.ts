@@ -13,6 +13,8 @@ import {NasdaqCorrection} from './2026-11-06-nasdaq-correction/Video';
 import nasdaqCorrection from './2026-11-06-nasdaq-correction/script.json';
 import {BreakEven} from './2026-11-09-break-even/Video';
 import breakEven from './2026-11-09-break-even/script.json';
+import {NegativeLeverage} from './2026-11-10-negative-leverage/Video';
+import negativeLeverage from './2026-11-10-negative-leverage/script.json';
 
 export type VideoProps = {withAudio: boolean; showSafeZone: boolean};
 
@@ -40,4 +42,5 @@ export const VIDEOS: VideoEntry[] = [
   {slug: '2026-11-05-pay-vs-inflation', component: PayVsInflation, data: payVsInflation},
   {slug: '2026-11-06-nasdaq-correction', component: NasdaqCorrection, data: nasdaqCorrection},
   {slug: '2026-11-09-break-even', component: BreakEven, data: breakEven},
+  {slug: '2026-11-10-negative-leverage', component: NegativeLeverage, data: negativeLeverage},
 ];
