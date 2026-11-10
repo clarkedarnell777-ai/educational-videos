@@ -44,5 +44,6 @@ https://docs.google.com/spreadsheets/d/1sIVlIPCHp-CuA27D6Vw9Dd6qtO5Dvu4d3gMr4cbI
 | 2026-10-30 | `2026-10-30-real-vs-nominal-gdp` | GDP Grew 5.6%… or 3.4%? Real vs. Nominal | Built (no voiceover), awaiting preview |
 | 2026-11-02 | `2026-11-02-sba-coverage-rule` | Buying a Business? Your Forecast Won't Save the Deal | Built with voiceover, awaiting preview |
 | 2026-11-04 | `2026-11-04-cash-flow-vs-net-worth` | Worth $200K, Still Short on Bills? Cash Flow vs Net Worth | Built (no voiceover), awaiting preview |
+| 2026-11-05 | `2026-11-05-pay-vs-inflation` | Your Pay Went Up. Your Buying Power Didn't. | Built with voiceover, awaiting preview |
 
 Educational content only; not financial advice.
