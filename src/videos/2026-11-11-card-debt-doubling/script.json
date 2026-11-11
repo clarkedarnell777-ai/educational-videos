@@ -1,0 +1,169 @@
+{
+  "id": "CardDebtDoubling",
+  "title": "Your Card Debt Doubles in 3 Years. Your Savings? 180.",
+  "productionDate": "2026-11-11",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 210,
+      "vo": "At today's card rates, unpaid debt can double in about three years. Savings? Over 180.",
+      "captions": [
+        {
+          "text": "At today's card rates, unpaid debt can double in about 3 years.",
+          "from": 9,
+          "to": 126
+        },
+        {
+          "text": "Savings? Over 180 years.",
+          "from": 126,
+          "to": 204
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 141,
+      "vo": "That's compound interest: interest charged on last month's interest.",
+      "captions": [
+        {
+          "text": "That's compound interest:",
+          "from": 12,
+          "to": 57
+        },
+        {
+          "text": "interest charged on last month's interest.",
+          "from": 57,
+          "to": 135
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 231,
+      "vo": "Banks charged 22.36 percent on cards last quarter. Average savings pays 0.38 percent.",
+      "captions": [
+        {
+          "text": "Banks charged 22.36% on cards last quarter.",
+          "from": 12,
+          "to": 124
+        },
+        {
+          "text": "Average savings pays 0.38%.",
+          "from": 124,
+          "to": 225
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 239,
+      "vo": "Leave five thousand dollars on a card for a year: about 1,240 in interest. In savings, about 19.",
+      "captions": [
+        {
+          "text": "Leave $5,000 on a card for a year:",
+          "from": 12,
+          "to": 87
+        },
+        {
+          "text": "about $1,240 in interest.",
+          "from": 87,
+          "to": 169
+        },
+        {
+          "text": "In savings, about $19.",
+          "from": 169,
+          "to": 233
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 127,
+      "vo": "Your move: find your highest-rate balance and pay it down first.",
+      "captions": [
+        {
+          "text": "Your move:",
+          "from": 12,
+          "to": 32
+        },
+        {
+          "text": "find your highest-rate balance and pay it down first.",
+          "from": 32,
+          "to": 127
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "cardRate": {
+      "value": 22.36,
+      "unit": "% APR, commercial bank credit card plans, accounts assessed interest (not seasonally adjusted)",
+      "period": "2026 Q3 (preliminary); Q2 2026 was 22.15%, all accounts Q3 21.19%",
+      "source": "Federal Reserve G.19 Consumer Credit, published 2026-11-06; https://www.federalreserve.gov/releases/g19/20261106/g19.pdf (re-read 2026-11-11)"
+    },
+    "savingsRate": {
+      "value": 0.38,
+      "unit": "% APY, FDIC national average rate, savings",
+      "period": "October 2026",
+      "source": "FDIC National Rate: Savings via FRED series SNDR, updated 2026-10-19; https://fred.stlouisfed.org/series/SNDR (re-read 2026-11-11)"
+    },
+    "cardBalances": {
+      "value": 1.29,
+      "unit": "trillion USD, US credit card balances",
+      "period": "2026 Q3 (table $1.285T; up $22B from Q2)",
+      "source": "Federal Reserve Bank of New York, Household Debt and Credit Report Q3 2026, published 2026-11-10; https://www.newyorkfed.org/newsevents/news/research/2026/20261110 (logged at scripting 2026-11-11; not re-opened at build)"
+    },
+    "exampleBalance": {
+      "value": 5000,
+      "unit": "USD",
+      "period": "Illustrative",
+      "source": "Illustrative. Monthly compounding at the rates above, no payments, no new charges or fees, constant rates. Computed in code (scenes/math.ts): 12-month card interest ≈ $1,240, savings ≈ $19; doubling time card ≈ 3.13 yrs, savings ≈ 182.4 yrs"
+    }
+  },
+  "notes": [
+    "Doubling times and the $5,000 example are illustrative: monthly compounding, no payments, no new charges, constant rates. Most cards compound daily; minimum payments apply in practice.",
+    "G.19 Q3 2026 rate is preliminary and covers commercial-bank card accounts assessed interest only."
+  ],
+  "voice": {
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.08,
+    "pauseCompression": "internal pauses longer than 0.28 s shortened to 0.28 s (silence only, no words cut)",
+    "rawClipSeconds": [
+      6.491,
+      3.995,
+      7.246,
+      7.52,
+      3.771
+    ],
+    "clipSeconds": [
+      6.01,
+      3.699,
+      6.709,
+      6.963,
+      3.492
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      7.0,
+      11.3,
+      18.6,
+      26.167
+    ],
+    "narrationEndsSeconds": 29.658,
+    "file": "public/audio/2026-11-11-card-debt-doubling/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14 LUFS target, -1.5 dBTP",
+    "transcriptionCheck": "All five clips matched the script, every number correct (Speko audio.transcribe, 2026-11-11)",
+    "captionTiming": "Caption chunks start ~0.1 s before each sentence, anchored to the measured pauses in each clip (after trim, pause compression and tempo)"
+  }
+}
