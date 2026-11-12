@@ -1,0 +1,200 @@
+{
+  "id": "WhoCountsUnemployed",
+  "title": "4.1% Unemployed? Who the Number Leaves Out",
+  "productionDate": "2026-11-12",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 129,
+      "vo": "Stop looking for work, and you stop counting as unemployed.",
+      "captions": [
+        {
+          "text": "Stop looking for work,",
+          "from": 9,
+          "to": 46
+        },
+        {
+          "text": "and you stop counting as unemployed.",
+          "from": 46,
+          "to": 125
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 202,
+      "vo": "Officially, unemployed means no job, available, and searched in the past four weeks.",
+      "captions": [
+        {
+          "text": "Officially, unemployed means",
+          "from": 12,
+          "to": 49
+        },
+        {
+          "text": "no job, available,",
+          "from": 49,
+          "to": 88
+        },
+        {
+          "text": "and searched in the past 4 weeks.",
+          "from": 88,
+          "to": 198
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 260,
+      "vo": "In October, 7.1 million people met that test, out of 170.7 million. That's 4.1%.",
+      "captions": [
+        {
+          "text": "In October, 7.1 million people met that test,",
+          "from": 12,
+          "to": 109
+        },
+        {
+          "text": "out of 170.7 million.",
+          "from": 109,
+          "to": 189
+        },
+        {
+          "text": "That's 4.1%.",
+          "from": 189,
+          "to": 256
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 234,
+      "vo": "Add people who want work but stopped looking, plus part-timers wanting more hours, and the broader rate is 7.9%.",
+      "captions": [
+        {
+          "text": "Add people who want work but stopped looking,",
+          "from": 12,
+          "to": 83
+        },
+        {
+          "text": "plus part-timers wanting more hours,",
+          "from": 83,
+          "to": 130
+        },
+        {
+          "text": "and the broader rate is 7.9%.",
+          "from": 130,
+          "to": 230
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 123,
+      "vo": "On jobs day, check both rates before judging the job market.",
+      "captions": [
+        {
+          "text": "On jobs day, check both rates",
+          "from": 12,
+          "to": 63
+        },
+        {
+          "text": "before judging the job market.",
+          "from": 63,
+          "to": 123
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "u3Rate": {
+      "value": 4.1,
+      "unit": "% of civilian labor force, official unemployment rate (U-3), seasonally adjusted",
+      "period": "October 2026 (September 2026: 4.2%)",
+      "source": "BLS Employment Situation, October 2026, published 2026-11-06, Table A-1 and A-15; https://www.bls.gov/news.release/archives/empsit_11062026.htm (re-read 2026-11-12)"
+    },
+    "unemployed": {
+      "value": 7.068,
+      "unit": "million people unemployed, seasonally adjusted (shown rounded as 7.1M)",
+      "period": "October 2026",
+      "source": "BLS Employment Situation, Table A-1, published 2026-11-06 (re-read 2026-11-12)"
+    },
+    "laborForce": {
+      "value": 170.683,
+      "unit": "million, civilian labor force, seasonally adjusted (shown rounded as 170.7M)",
+      "period": "October 2026",
+      "source": "BLS Employment Situation, Table A-1, published 2026-11-06 (re-read 2026-11-12)"
+    },
+    "u3Check": {
+      "value": 4.14,
+      "unit": "% computed in code: 7.068 / 170.683 (scenes/math.ts); rounds to the published 4.1%",
+      "period": "October 2026",
+      "source": "Computed from BLS Table A-1 levels"
+    },
+    "u6Rate": {
+      "value": 7.9,
+      "unit": "% U-6: unemployed + all marginally attached + part-time for economic reasons, as % of labor force + marginally attached, seasonally adjusted",
+      "period": "October 2026 (September 2026: 7.6%)",
+      "source": "BLS Employment Situation, Table A-15, published 2026-11-06 (re-read 2026-11-12)"
+    },
+    "partTimeEconomic": {
+      "value": 4.84,
+      "unit": "million, part-time for economic reasons, seasonally adjusted",
+      "period": "October 2026",
+      "source": "BLS Employment Situation, published 2026-11-06 (re-read 2026-11-12)"
+    },
+    "definition": {
+      "value": "No job in the reference week, available for work, actively looked in the prior 4 weeks (or on temporary layoff)",
+      "unit": "BLS CPS definition of unemployed",
+      "period": "current",
+      "source": "BLS CPS Concepts & Definitions, https://www.bls.gov/cps/definitions.htm (page modified 2026-11-03)"
+    }
+  },
+  "notes": [
+    "Household survey (CPS) figures, seasonally adjusted, subject to annual revision.",
+    "U-6 adds all 'marginally attached' workers (discouraged workers are a subset) plus part-time for economic reasons; S4 wording 'want work but stopped looking' covers the marginally attached group.",
+    "The S4 stacked bar shows only the published 4.1% and 7.9% endpoints; the added band is not split into sized layers because BLS does not publish each layer as a share of the U-6 denominator in this release.",
+    "Discouraged workers (448K SA) are in the key facts only, not on screen."
+  ],
+  "voice": {
+    "provider": "elevenlabs via Speko",
+    "model": "eleven_v4_turbo",
+    "voiceId": "provider default",
+    "settings": {
+      "language": "en-US",
+      "optimizeFor": "accuracy"
+    },
+    "tempo": 1.09,
+    "pauseCompression": "internal pauses longer than 0.28 s (at -40 dB) shortened to 0.28 s (silence only, no words cut)",
+    "rawClipSeconds": [
+      3.581,
+      6.339,
+      8.668,
+      7.719,
+      3.698
+    ],
+    "clipSeconds": [
+      3.299,
+      5.726,
+      7.675,
+      6.803,
+      3.302
+    ],
+    "clipOffsetsSeconds": [
+      0.3,
+      4.3,
+      10.633,
+      18.9,
+      26.3
+    ],
+    "narrationEndsSeconds": 29.602,
+    "file": "public/audio/2026-11-12-who-counts-unemployed/voiceover.wav",
+    "format": "48 kHz stereo WAV, 30.0 s, -14 LUFS (loudnorm TP -1.5)",
+    "synthesisText": "S3 and S4 sent with 'percent' spelled out (first takes with '%' were transcribed without the word 'percent'; re-synthesized once)",
+    "transcriptionCheck": "All five clips matched the script, every number correct (Speko audio.transcribe, 2026-11-12)",
+    "captionTiming": "Caption chunks timed by spoken-word share within each clip (numbers counted as spoken words), starting ~0.1 s early"
+  }
+}

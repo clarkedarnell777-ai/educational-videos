@@ -11,6 +11,8 @@ import {PayVsInflation} from './2026-11-05-pay-vs-inflation/Video';
 import payVsInflation from './2026-11-05-pay-vs-inflation/script.json';
 import {CardDebtDoubling} from './2026-11-11-card-debt-doubling/Video';
 import cardDebtDoubling from './2026-11-11-card-debt-doubling/script.json';
+import {WhoCountsUnemployed} from './2026-11-12-who-counts-unemployed/Video';
+import whoCountsUnemployed from './2026-11-12-who-counts-unemployed/script.json';
 
 export type VideoProps = {withAudio: boolean; showSafeZone: boolean};
 
@@ -37,4 +39,5 @@ export const VIDEOS: VideoEntry[] = [
   {slug: '2026-11-04-cash-flow-vs-net-worth', component: CashFlowVsNetWorth, data: cashFlowVsNetWorth},
   {slug: '2026-11-05-pay-vs-inflation', component: PayVsInflation, data: payVsInflation},
   {slug: '2026-11-11-card-debt-doubling', component: CardDebtDoubling, data: cardDebtDoubling},
+  {slug: '2026-11-12-who-counts-unemployed', component: WhoCountsUnemployed, data: whoCountsUnemployed},
 ];
