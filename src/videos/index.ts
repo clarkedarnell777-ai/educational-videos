@@ -13,6 +13,10 @@ import {CardDebtDoubling} from './2026-11-11-card-debt-doubling/Video';
 import cardDebtDoubling from './2026-11-11-card-debt-doubling/script.json';
 import {WhoCountsUnemployed} from './2026-11-12-who-counts-unemployed/Video';
 import whoCountsUnemployed from './2026-11-12-who-counts-unemployed/script.json';
+import {Exchange1031Clock} from './2026-11-17-1031-clock/Video';
+import exchange1031Clock from './2026-11-17-1031-clock/script.json';
+import {IBondRateSplit} from './2026-11-18-i-bond-rate/Video';
+import iBondRateSplit from './2026-11-18-i-bond-rate/script.json';
 
 export type VideoProps = {withAudio: boolean; showSafeZone: boolean};
 
@@ -40,4 +44,6 @@ export const VIDEOS: VideoEntry[] = [
   {slug: '2026-11-05-pay-vs-inflation', component: PayVsInflation, data: payVsInflation},
   {slug: '2026-11-11-card-debt-doubling', component: CardDebtDoubling, data: cardDebtDoubling},
   {slug: '2026-11-12-who-counts-unemployed', component: WhoCountsUnemployed, data: whoCountsUnemployed},
+  {slug: '2026-11-17-1031-clock', component: Exchange1031Clock, data: exchange1031Clock},
+  {slug: '2026-11-18-i-bond-rate', component: IBondRateSplit, data: iBondRateSplit},
 ];

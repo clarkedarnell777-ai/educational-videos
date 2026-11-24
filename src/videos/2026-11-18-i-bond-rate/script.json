@@ -1,0 +1,155 @@
+{
+  "id": "IBondRateSplit",
+  "title": "Savings Bonds Pay 5.51%. Here's the Part You Keep.",
+  "productionDate": "2026-11-18",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 144,
+      "vo": "A U.S. savings bond pays 5.51 percent. That number won't last.",
+      "captions": [
+        {
+          "text": "A U.S. savings bond pays 5.51%.",
+          "from": 6,
+          "to": 82
+        },
+        {
+          "text": "That number won't last.",
+          "from": 82,
+          "to": 132
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 222,
+      "vo": "I bonds pay two rates: a fixed rate locked for life, plus an inflation rate reset every six months.",
+      "captions": [
+        {
+          "text": "I bonds pay two rates:",
+          "from": 12,
+          "to": 64
+        },
+        {
+          "text": "a fixed rate locked for life,",
+          "from": 64,
+          "to": 127
+        },
+        {
+          "text": "plus an inflation rate reset every six months.",
+          "from": 127,
+          "to": 210
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 180,
+      "vo": "Right now, that's 1.40 percent fixed, plus about 4.1 from inflation.",
+      "captions": [
+        {
+          "text": "Right now, that's 1.40% fixed,",
+          "from": 12,
+          "to": 90
+        },
+        {
+          "text": "plus about 4.1 from inflation.",
+          "from": 90,
+          "to": 168
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 228,
+      "vo": "Illustrative: 10,000 dollars earns about 275 in six months. You can't cash out for a year.",
+      "captions": [
+        {
+          "text": "Illustrative: $10,000 earns",
+          "from": 12,
+          "to": 53
+        },
+        {
+          "text": "about $275 in six months.",
+          "from": 53,
+          "to": 121
+        },
+        {
+          "text": "You can't cash out for a year.",
+          "from": 121,
+          "to": 216
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 174,
+      "vo": "Before buying, check the fixed rate. That's the part you keep.",
+      "captions": [
+        {
+          "text": "Before buying, check the fixed rate.",
+          "from": 12,
+          "to": 94
+        },
+        {
+          "text": "That's the part you keep.",
+          "from": 94,
+          "to": 162
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "composite": {
+      "value": 5.51,
+      "unit": "% annualized composite rate, I bonds issued Nov 1, 2026 – Apr 30, 2027",
+      "period": "Nov 2026 – Apr 2027 (prior period May–Oct 2026: 4.26%)",
+      "source": "Tipswatch and Doctor of Credit, both published 2026-10-30; Wolf Street 2026-10-30 (TreasuryDirect rate page blocked to automated access); recomputed with 31 CFR 359.14 in scenes/math.ts"
+    },
+    "fixed": {
+      "value": 1.4,
+      "unit": "% fixed rate, established for the life of the bond (31 CFR 359.10)",
+      "period": "bonds issued Nov 2026 – Apr 2027",
+      "source": "Same as composite; rule text 31 CFR 359.10 (Cornell LII, retrieved 2026-11-18)"
+    },
+    "semiannualInflation": {
+      "value": 2.04,
+      "unit": "% semiannual inflation rate = CPI-U (NSA) Mar 2026 330.213 → Sep 2026 336.940 (+2.037%)",
+      "period": "Mar–Sep 2026 CPI-U",
+      "source": "BLS CPI-U NSA via FRED CPIAUCNS, updated 2026-11-10; computed in scenes/math.ts"
+    },
+    "inflationPart": {
+      "value": 4.11,
+      "unit": "% inflation portion of the composite (composite − fixed), computed in scenes/math.ts; VO says 'about 4.1'",
+      "period": "Nov 2026 – Apr 2027",
+      "source": "Computed via 31 CFR 359.14"
+    },
+    "exampleInterest": {
+      "value": 275.5,
+      "unit": "$ Illustrative: $10,000 × 5.51% ÷ 2, one six-month period (VO: 'about 275'); actual accrual is monthly and the rate resets in May 2027",
+      "period": "Illustrative",
+      "source": "Computed in scenes/math.ts"
+    },
+    "minHold": {
+      "value": 12,
+      "unit": "months before an I bond can be redeemed (31 CFR 359.6); redeemed before 5 years loses the last 3 months of interest (359.7)",
+      "period": "current rule",
+      "source": "31 CFR 359.6 / 359.7 (Cornell LII, retrieved 2026-11-18)"
+    }
+  },
+  "notes": [
+    "Educational only, not financial advice.",
+    "5.51%/1.40% rest on secondary sources dated 2026-10-30 (TreasuryDirect blocked to automated access); the 2.04% inflation part and the 5.51% composite were recomputed from official CPI-U and the 31 CFR 359.14 formula and match.",
+    "The composite resets every six months; the inflation part can fall."
+  ],
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko returned 402 for ElevenLabs (eleven_v4_turbo): the Speko workspace needs a top-up (from $5) before ElevenLabs runs on Speko's keys. Other providers were not used, to keep the voice identical across videos.",
+    "attempted": "2026-11-24"
+  }
+}

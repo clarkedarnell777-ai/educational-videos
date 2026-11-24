@@ -1,0 +1,179 @@
+{
+  "id": "Exchange1031Clock",
+  "title": "Selling a Rental in November? Your 1031 Clock Shrinks",
+  "productionDate": "2026-11-17",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 156,
+      "vo": "Sell a rental this month? Your 1031 clock could lose a month.",
+      "captions": [
+        {
+          "text": "Sell a rental this month?",
+          "from": 6,
+          "to": 64
+        },
+        {
+          "text": "Your 1031 clock could lose a month.",
+          "from": 64,
+          "to": 144
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 186,
+      "vo": "A 1031 exchange defers tax on a rental's gain when you reinvest in real estate.",
+      "captions": [
+        {
+          "text": "A 1031 exchange defers tax on a rental's gain",
+          "from": 12,
+          "to": 109
+        },
+        {
+          "text": "when you reinvest in real estate.",
+          "from": 109,
+          "to": 174
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 222,
+      "vo": "Name the replacement in 45 days. Close within 180, or by your tax deadline, if sooner.",
+      "captions": [
+        {
+          "text": "Name the replacement in 45 days.",
+          "from": 12,
+          "to": 86
+        },
+        {
+          "text": "Close within 180,",
+          "from": 86,
+          "to": 123
+        },
+        {
+          "text": "or by your tax deadline, if sooner.",
+          "from": 123,
+          "to": 210
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 210,
+      "vo": "Sell November seventeenth: day 180 is May sixteenth. Returns are due April fifteenth.",
+      "captions": [
+        {
+          "text": "Sell November 17th:",
+          "from": 12,
+          "to": 55
+        },
+        {
+          "text": "day 180 is May 16th.",
+          "from": 55,
+          "to": 127
+        },
+        {
+          "text": "Returns are due April 15th.",
+          "from": 127,
+          "to": 198
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 174,
+      "vo": "That's 31 days gone. Selling late? Ask your tax pro about an extension.",
+      "captions": [
+        {
+          "text": "That's 31 days gone.",
+          "from": 12,
+          "to": 58
+        },
+        {
+          "text": "Selling late? Ask your tax pro about an extension.",
+          "from": 58,
+          "to": 162
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "scope": {
+      "value": "Real property held for business or investment (since 2018)",
+      "unit": "what qualifies",
+      "period": "tax years after 2017",
+      "source": "IRS, 2026 Instructions for Form 8824, published 2026-11-09, https://www.irs.gov/pub/irs-pdf/i8824.pdf"
+    },
+    "identifyDays": {
+      "value": 45,
+      "unit": "days after transfer of relinquished property to identify replacement",
+      "period": "current rule",
+      "source": "IRS, 2026 Instructions for Form 8824, published 2026-11-09"
+    },
+    "receiveDays": {
+      "value": 180,
+      "unit": "days after transfer, or the tax return due date incl. extensions, whichever is earlier",
+      "period": "current rule",
+      "source": "IRS, 2026 Instructions for Form 8824, published 2026-11-09"
+    },
+    "returnDueDate": {
+      "value": "2027-04-15",
+      "unit": "due date of 2026 calendar-year individual returns for most people (extension to 2027-10-15 via Form 4868)",
+      "period": "tax year 2026",
+      "source": "IRS draft Form 4868 (2026), created 2026-05-13, https://www.irs.gov/pub/irs-dft/f4868--dft.pdf"
+    },
+    "exampleSaleDate": {
+      "value": "2026-11-17",
+      "unit": "Illustrative hypothetical sale date",
+      "period": "Illustrative",
+      "source": "Illustrative"
+    },
+    "exampleDay45": {
+      "value": "2027-01-01",
+      "unit": "sale date + 45 days, computed in scenes/math.ts",
+      "period": "Illustrative",
+      "source": "Computed"
+    },
+    "exampleDay180": {
+      "value": "2027-05-16",
+      "unit": "sale date + 180 days, computed in scenes/math.ts",
+      "period": "Illustrative",
+      "source": "Computed"
+    },
+    "exampleDueDay": {
+      "value": 149,
+      "unit": "days from sale to Apr 15, 2027, computed in scenes/math.ts",
+      "period": "Illustrative",
+      "source": "Computed"
+    },
+    "daysLost": {
+      "value": 31,
+      "unit": "days between Apr 15 and May 16, 2027 (lost without an extension), computed in scenes/math.ts",
+      "period": "Illustrative",
+      "source": "Computed"
+    },
+    "cutoffSale": {
+      "value": "2026-10-17",
+      "unit": "a sale on this date has day 180 = Apr 15, 2027; later sales are cut short (calendar-year individual, Apr 15 due date)",
+      "period": "tax year 2026",
+      "source": "Computed from the rules above"
+    }
+  },
+  "notes": [
+    "Educational only, not tax advice. Assumes a calendar-year individual with an April 15, 2027 due date (from the IRS DRAFT 2026 Form 4868); disaster postponements could change it.",
+    "Does not cover qualified intermediaries, boot or related-party rules, and does not claim weekends/holidays extend 1031 deadlines.",
+    "VO text keeps '1031'; read aloud as 'ten thirty-one'."
+  ],
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko returned 402 for ElevenLabs (eleven_v4_turbo): the Speko workspace needs a top-up (from $5) before ElevenLabs runs on Speko's keys. Other providers were not used, to keep the voice identical across videos.",
+    "attempted": "2026-11-24"
+  }
+}
