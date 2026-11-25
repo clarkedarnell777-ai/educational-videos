@@ -1,0 +1,183 @@
+{
+  "id": "FedMinutesWording",
+  "title": "The Fed Didn't Hike. Why Are Borrowers Bracing?",
+  "productionDate": "2026-11-20",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 150,
+      "vo": "The Fed held rates in October. So why are borrowers bracing?",
+      "captions": [
+        {
+          "text": "The Fed held rates in October.",
+          "from": 6,
+          "to": 78
+        },
+        {
+          "text": "So why are borrowers bracing?",
+          "from": 78,
+          "to": 138
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 198,
+      "vo": "Check the minutes, the meeting notes released three weeks later. The key is the wording.",
+      "captions": [
+        {
+          "text": "Check the minutes,",
+          "from": 12,
+          "to": 47
+        },
+        {
+          "text": "the meeting notes released three weeks later.",
+          "from": 47,
+          "to": 128
+        },
+        {
+          "text": "The key is the wording.",
+          "from": 128,
+          "to": 186
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 222,
+      "vo": "Most officials backed holding at three seventy-five to four percent. Some wanted a hike. Almost all saw hikes likely.",
+      "captions": [
+        {
+          "text": "Most officials backed holding at 3.75% to 4%.",
+          "from": 12,
+          "to": 105
+        },
+        {
+          "text": "Some wanted a hike.",
+          "from": 105,
+          "to": 152
+        },
+        {
+          "text": "Almost all saw hikes likely.",
+          "from": 152,
+          "to": 210
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 222,
+      "vo": "Mortgage rates rose too: Freddie Mac's average hit seven twenty-eight, then eased to seven twenty-one.",
+      "captions": [
+        {
+          "text": "Mortgage rates rose too:",
+          "from": 12,
+          "to": 73
+        },
+        {
+          "text": "Freddie Mac's average hit 7.28%,",
+          "from": 73,
+          "to": 149
+        },
+        {
+          "text": "then eased to 7.21%.",
+          "from": 149,
+          "to": 210
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 156,
+      "vo": "Borrowing soon? Price your payment at a higher rate first.",
+      "captions": [
+        {
+          "text": "Borrowing soon?",
+          "from": 12,
+          "to": 38
+        },
+        {
+          "text": "Price your payment at a higher rate first.",
+          "from": 38,
+          "to": 144
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "minutesRelease": {
+      "value": "Nov 18, 2026",
+      "unit": "release date of minutes for the Oct 27-28, 2026 FOMC meeting (3 weeks after the decision)",
+      "period": "Oct 27-28, 2026 meeting",
+      "source": "Federal Reserve press release, Nov 18, 2026 (federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm)"
+    },
+    "fedRange": {
+      "value": "3.75-4.00",
+      "unit": "% federal funds target range, held; vote 10-2 (Cook, Hammack preferred +25 bp)",
+      "period": "Oct 28, 2026",
+      "source": "FOMC minutes, Oct 27-28, 2026, published Nov 18, 2026"
+    },
+    "minutesWording": {
+      "value": "most / some / almost all",
+      "unit": "quoted quantifiers: 'most participants expressed support for maintaining the target range'; 'Some participants favored an increase of 25 basis points'; 'almost all participants judged that, under their baseline outlooks...' further increases 'would likely be appropriate'. No official numeric definitions, so no counts are shown.",
+      "period": "Oct 27-28, 2026 meeting",
+      "source": "FOMC minutes, published Nov 18, 2026"
+    },
+    "nextMeeting": {
+      "value": "Dec 8-9, 2026",
+      "unit": "next FOMC meeting",
+      "period": "2026 calendar",
+      "source": "Federal Reserve FOMC calendar"
+    },
+    "pmmsYearAgo": {
+      "value": 6.23,
+      "unit": "% 30-yr fixed average a year earlier (as cited in the Nov 25, 2026 release)",
+      "period": "late Nov 2025",
+      "source": "Freddie Mac PMMS release 'Mortgage Rates Dip to 7.21%', Nov 25, 2026"
+    },
+    "pmmsNov13": {
+      "value": 7.11,
+      "unit": "% 30-yr fixed average",
+      "period": "week of Nov 12/13, 2026",
+      "source": "Freddie Mac PMMS, Nov 19, 2026 release (prior-week value)"
+    },
+    "pmmsNov19": {
+      "value": 7.28,
+      "unit": "% 30-yr fixed average",
+      "period": "as of Nov 19, 2026",
+      "source": "Freddie Mac PMMS, published Nov 19, 2026 (freddiemac.com/pmms)"
+    },
+    "pmmsNov25": {
+      "value": 7.21,
+      "unit": "% 30-yr fixed average (15-yr 6.54%)",
+      "period": "as of Nov 25, 2026 (Thanksgiving-week Wednesday release)",
+      "source": "Freddie Mac PMMS release 'Mortgage Rates Dip to 7.21%', Nov 25, 2026 12:00 ET (GlobeNewswire)"
+    },
+    "illustrativePayment": {
+      "value": {
+        "at711": 2018.12,
+        "at728": 2052.64,
+        "diff": 34.52
+      },
+      "unit": "$ monthly P&I, Illustrative: $300,000, 30-yr fixed, 7.11% vs 7.28% (computed in scenes/math.ts); excludes taxes and insurance",
+      "period": "Illustrative",
+      "source": "Computed"
+    }
+  },
+  "notes": [
+    "Educational only, not financial advice.",
+    "Mortgage rates are shown alongside the minutes, not as caused by them.",
+    "'Almost all saw hikes likely' is a projection conditional on officials' baseline outlooks, not a decision.",
+    "Refreshed 2026-11-25: Freddie Mac PMMS Nov 25 = 7.21% (down from 7.28%). S4 VO changed from '...hit seven twenty-eight, up from seven eleven.' to '...hit seven twenty-eight, then eased to seven twenty-one.' (69 -> 70 words)."
+  ],
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko returned 402 for ElevenLabs (eleven_v4_turbo): the Speko workspace needs a one-time top-up (from $5) before ElevenLabs runs on Speko's keys. Other providers were not used, to keep the voice identical across videos.",
+    "attempted": "2026-11-25"
+  }
+}

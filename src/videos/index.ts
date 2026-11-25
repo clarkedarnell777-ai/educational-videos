@@ -17,6 +17,10 @@ import {Exchange1031Clock} from './2026-11-17-1031-clock/Video';
 import exchange1031Clock from './2026-11-17-1031-clock/script.json';
 import {IBondRateSplit} from './2026-11-18-i-bond-rate/Video';
 import iBondRateSplit from './2026-11-18-i-bond-rate/script.json';
+import {FedToPrime} from './2026-11-19-fed-to-prime/Video';
+import fedToPrime from './2026-11-19-fed-to-prime/script.json';
+import {FedMinutesWording} from './2026-11-20-fed-minutes-wording/Video';
+import fedMinutesWording from './2026-11-20-fed-minutes-wording/script.json';
 
 export type VideoProps = {withAudio: boolean; showSafeZone: boolean};
 
@@ -46,4 +50,6 @@ export const VIDEOS: VideoEntry[] = [
   {slug: '2026-11-12-who-counts-unemployed', component: WhoCountsUnemployed, data: whoCountsUnemployed},
   {slug: '2026-11-17-1031-clock', component: Exchange1031Clock, data: exchange1031Clock},
   {slug: '2026-11-18-i-bond-rate', component: IBondRateSplit, data: iBondRateSplit},
+  {slug: '2026-11-19-fed-to-prime', component: FedToPrime, data: fedToPrime},
+  {slug: '2026-11-20-fed-minutes-wording', component: FedMinutesWording, data: fedMinutesWording},
 ];

@@ -49,5 +49,7 @@ https://docs.google.com/spreadsheets/d/1sIVlIPCHp-CuA27D6Vw9Dd6qtO5Dvu4d3gMr4cbI
 | 2026-11-12 | `2026-11-12-who-counts-unemployed` | 4.1% Unemployed? Who the Number Leaves Out | Built with voiceover, awaiting preview |
 | 2026-11-17 | `2026-11-17-1031-clock` | Selling a Rental in November? Your 1031 Clock Shrinks | Built (no voiceover), awaiting preview |
 | 2026-11-18 | `2026-11-18-i-bond-rate` | Savings Bonds Pay 5.51%. Here's the Part You Keep. | Built (no voiceover), awaiting preview |
+| 2026-11-19 | `2026-11-19-fed-to-prime` | Two Fed Officials Wanted a Hike. Does Your Loan Float? | Built (no voiceover), awaiting preview |
+| 2026-11-20 | `2026-11-20-fed-minutes-wording` | The Fed Didn't Hike. Why Are Borrowers Bracing? | Built (no voiceover), awaiting preview |
 
 Educational content only; not financial advice.

@@ -1,0 +1,172 @@
+{
+  "id": "FedToPrime",
+  "title": "Two Fed Officials Wanted a Hike. Does Your Loan Float?",
+  "productionDate": "2026-11-19",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 156,
+      "vo": "Two Fed officials just voted to raise rates. If your loan floats, listen up.",
+      "captions": [
+        {
+          "text": "Two Fed officials just voted to raise rates.",
+          "from": 6,
+          "to": 85
+        },
+        {
+          "text": "If your loan floats, listen up.",
+          "from": 85,
+          "to": 144
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 186,
+      "vo": "The Fed sets one rate, for overnight bank loans. Other rates stack on top.",
+      "captions": [
+        {
+          "text": "The Fed sets one rate,",
+          "from": 12,
+          "to": 70
+        },
+        {
+          "text": "for overnight bank loans.",
+          "from": 70,
+          "to": 116
+        },
+        {
+          "text": "Other rates stack on top.",
+          "from": 116,
+          "to": 174
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 222,
+      "vo": "Its range tops out at 4 percent. Prime sits at 7. Variable loans add a margin.",
+      "captions": [
+        {
+          "text": "Its range tops out at 4%.",
+          "from": 12,
+          "to": 91
+        },
+        {
+          "text": "Prime sits at 7%.",
+          "from": 91,
+          "to": 144
+        },
+        {
+          "text": "Variable loans add a margin.",
+          "from": 144,
+          "to": 210
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 216,
+      "vo": "Illustrative: on a 50,000 dollar home equity line, each quarter-point hike costs about 125 dollars a year.",
+      "captions": [
+        {
+          "text": "Illustrative: on a $50,000 home equity line,",
+          "from": 12,
+          "to": 102
+        },
+        {
+          "text": "each quarter-point hike",
+          "from": 102,
+          "to": 140
+        },
+        {
+          "text": "costs about $125 a year.",
+          "from": 140,
+          "to": 204
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 168,
+      "vo": "Check your loan papers: fixed, or tied to prime?",
+      "captions": [
+        {
+          "text": "Check your loan papers:",
+          "from": 12,
+          "to": 76
+        },
+        {
+          "text": "fixed, or tied to prime?",
+          "from": 76,
+          "to": 156
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "fedRangeLow": {
+      "value": 3.75,
+      "unit": "% lower bound, federal funds target range",
+      "period": "set Oct 28, 2026 (held); no FOMC meeting since",
+      "source": "Federal Reserve FOMC statement, Oct 28, 2026 (federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm)"
+    },
+    "fedRangeHigh": {
+      "value": 4.0,
+      "unit": "% upper bound, federal funds target range",
+      "period": "set Oct 28, 2026",
+      "source": "Federal Reserve FOMC statement, Oct 28, 2026"
+    },
+    "vote": {
+      "value": "10-2",
+      "unit": "FOMC vote; Lisa D. Cook and Beth M. Hammack preferred a 1/4-point increase",
+      "period": "Oct 28, 2026 meeting",
+      "source": "Federal Reserve FOMC statement, Oct 28, 2026"
+    },
+    "prime": {
+      "value": 7.0,
+      "unit": "% Bank Prime Loan Rate (rate posted by a majority of top 25 insured U.S.-chartered commercial banks)",
+      "period": "daily, 7.00% for every observation Nov 17-23, 2026 (re-checked 2026-11-25)",
+      "source": "Federal Reserve H.15 via FRED DPRIME, updated Nov 24, 2026 (fred.stlouisfed.org/series/DPRIME)"
+    },
+    "primeGap": {
+      "value": 3.0,
+      "unit": "percentage points, prime minus top of Fed range (observed gap, computed in scenes/math.ts; not a legal rule)",
+      "period": "as of Nov 23, 2026",
+      "source": "Computed"
+    },
+    "helocRule": {
+      "value": "index + margin",
+      "unit": "HELOC variable rate = index (e.g., U.S. prime rate) + lender margin; payments may change even without new draws",
+      "period": "general concept",
+      "source": "CFPB, 'What you should know about home equity lines of credit', last updated Aug 2022"
+    },
+    "illustrativeHike": {
+      "value": 125.0,
+      "unit": "$ per year, Illustrative: $50,000 constant balance x 0.25 percentage point, interest only (about $10.42/month); computed in scenes/math.ts",
+      "period": "Illustrative",
+      "source": "Computed"
+    },
+    "nextMeeting": {
+      "value": "Dec 8-9, 2026",
+      "unit": "next scheduled FOMC meeting (decision Dec 9)",
+      "period": "2026 calendar",
+      "source": "Federal Reserve FOMC meeting calendar, retrieved 2026-11-19"
+    }
+  },
+  "notes": [
+    "Educational only, not financial advice.",
+    "The Fed held rates on Oct 28, 2026; two of twelve voters dissented in favor of a hike. VO 'voted to raise rates' is the owner-approved wording (dissent preferring a hike); the on-screen headline says 'wanted a hike'.",
+    "Prime = top of Fed range + 3 is today's observed gap, not a law; lenders' indexes and margins vary, and some loans have caps or intro rates."
+  ],
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko returned 402 for ElevenLabs (eleven_v4_turbo): the Speko workspace needs a one-time top-up (from $5) before ElevenLabs runs on Speko's keys. Other providers were not used, to keep the voice identical across videos.",
+    "attempted": "2026-11-25"
+  }
+}
