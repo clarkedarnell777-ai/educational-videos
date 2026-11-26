@@ -21,6 +21,8 @@ import {FedToPrime} from './2026-11-19-fed-to-prime/Video';
 import fedToPrime from './2026-11-19-fed-to-prime/script.json';
 import {FedMinutesWording} from './2026-11-20-fed-minutes-wording/Video';
 import fedMinutesWording from './2026-11-20-fed-minutes-wording/script.json';
+import {AiBreakEven} from './2026-11-23-ai-break-even/Video';
+import aiBreakEven from './2026-11-23-ai-break-even/script.json';
 
 export type VideoProps = {withAudio: boolean; showSafeZone: boolean};
 
@@ -52,4 +54,5 @@ export const VIDEOS: VideoEntry[] = [
   {slug: '2026-11-18-i-bond-rate', component: IBondRateSplit, data: iBondRateSplit},
   {slug: '2026-11-19-fed-to-prime', component: FedToPrime, data: fedToPrime},
   {slug: '2026-11-20-fed-minutes-wording', component: FedMinutesWording, data: fedMinutesWording},
+  {slug: '2026-11-23-ai-break-even', component: AiBreakEven, data: aiBreakEven},
 ];

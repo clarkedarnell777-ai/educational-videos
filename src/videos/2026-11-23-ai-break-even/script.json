@@ -1,0 +1,158 @@
+{
+  "id": "AiBreakEven",
+  "title": "1 in 5 Businesses Use AI. When Does It Pay Off?",
+  "productionDate": "2026-11-23",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 900,
+  "transitionFrames": 12,
+  "scenes": [
+    {
+      "key": "hook",
+      "frames": 150,
+      "vo": "About one in five U.S. businesses uses AI.",
+      "captions": [
+        {
+          "text": "About 1 in 5 U.S. businesses uses AI.",
+          "from": 6,
+          "to": 138
+        }
+      ]
+    },
+    {
+      "key": "explain",
+      "frames": 156,
+      "vo": "For small businesses, AI is a cost that must pay for itself.",
+      "captions": [
+        {
+          "text": "For small businesses,",
+          "from": 12,
+          "to": 45
+        },
+        {
+          "text": "AI is a cost that must pay for itself.",
+          "from": 45,
+          "to": 144
+        }
+      ]
+    },
+    {
+      "key": "how",
+      "frames": 264,
+      "vo": "Illustrative: a 30-dollar monthly tool, your time worth 25 dollars an hour. Save 1.2 hours a month and it breaks even.",
+      "captions": [
+        {
+          "text": "Illustrative: a $30 monthly tool,",
+          "from": 12,
+          "to": 64
+        },
+        {
+          "text": "your time worth $25 an hour.",
+          "from": 64,
+          "to": 137
+        },
+        {
+          "text": "Save 1.2 hours a month and it breaks even.",
+          "from": 137,
+          "to": 252
+        }
+      ]
+    },
+    {
+      "key": "real",
+      "frames": 210,
+      "vo": "And it's rarely about cutting staff: 96 percent of AI-using firms reported no headcount change.",
+      "captions": [
+        {
+          "text": "And it's rarely about cutting staff:",
+          "from": 12,
+          "to": 86
+        },
+        {
+          "text": "96% of AI-using firms",
+          "from": 86,
+          "to": 148
+        },
+        {
+          "text": "reported no headcount change.",
+          "from": 148,
+          "to": 198
+        }
+      ]
+    },
+    {
+      "key": "takeaway",
+      "frames": 168,
+      "vo": "Pick one repetitive task, test a tool for 30 days, track the hours.",
+      "captions": [
+        {
+          "text": "Pick one repetitive task,",
+          "from": 12,
+          "to": 56
+        },
+        {
+          "text": "test a tool for 30 days,",
+          "from": 56,
+          "to": 122
+        },
+        {
+          "text": "track the hours.",
+          "from": 122,
+          "to": 156
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "aiUseRate": {
+      "value": 19.8,
+      "unit": "% of U.S. businesses using AI in any business function (national rate)",
+      "period": "BTOS collection period ending May 3, 2026 (AI use hovered 17%-20%, Dec 14, 2025-May 3, 2026)",
+      "source": "U.S. Census Bureau, 'Large Firms With at Least 20 Employees Biggest AI Users', page last revised May 22, 2026 (census.gov/library/stories/2026/05/ai-use-businesses.html)"
+    },
+    "aiUseLargeFirms": {
+      "value": 37,
+      "unit": "% of firms with 250+ employees reporting AI use",
+      "period": "within the Dec 14, 2025-May 3, 2026 review (exact collection period not stated)",
+      "source": "U.S. Census Bureau story, May 22, 2026"
+    },
+    "aiUseSmallestFirms": {
+      "value": "under 20",
+      "unit": "% of firms with 1-4 employees reporting AI use ('less than 20%')",
+      "period": "Dec 14, 2025-May 3, 2026",
+      "source": "U.S. Census Bureau story, May 22, 2026"
+    },
+    "noHeadcountChange": {
+      "value": 96,
+      "unit": "% (roughly) of AI-using firms reporting no change in total employment over the prior six months",
+      "period": "BTOS AI supplement, April 2026",
+      "source": "Minneapolis Fed, 'AI adoption in business grows steadily but unevenly', May 29, 2026 (reporting Census BTOS AI supplement; original table not opened)"
+    },
+    "illustrativeBreakEven": {
+      "value": {
+        "toolPerMonth": 30,
+        "timePerHour": 25,
+        "breakEvenHours": 1.2,
+        "hoursSaved": 8,
+        "valueSaved": 200,
+        "net": 170
+      },
+      "unit": "Illustrative: $/month, $/hour, hours/month; computed in scenes/math.ts",
+      "period": "Illustrative",
+      "source": "Computed (not data)"
+    }
+  },
+  "notes": [
+    "Educational only, not financial advice.",
+    "BTOS changed its AI question in Nov 2025 (production use -> any business function); do not compare with earlier rates.",
+    "Refresh check 2026-11-26: Census BTOS Nov 5 and Nov 19, 2026 release pages still could not be fetched (client error), so 19.8% (period ending May 3, 2026) remains the newest verified rate. No figures changed.",
+    "Scene 3 numbers are illustrative, not data."
+  ],
+  "voice": {
+    "status": "not generated",
+    "reason": "Speko returned 402 for ElevenLabs (eleven_v4_turbo): the Speko workspace needs a one-time top-up (from $5) before ElevenLabs runs on Speko's keys. Other providers were not used, to keep the voice identical across videos.",
+    "attempted": "2026-11-26",
+    "captionTiming": "Caption chunks timed by spoken-word share within each scene's visible window (no audio to align to)."
+  }
+}

@@ -51,5 +51,6 @@ https://docs.google.com/spreadsheets/d/1sIVlIPCHp-CuA27D6Vw9Dd6qtO5Dvu4d3gMr4cbI
 | 2026-11-18 | `2026-11-18-i-bond-rate` | Savings Bonds Pay 5.51%. Here's the Part You Keep. | Built (no voiceover), awaiting preview |
 | 2026-11-19 | `2026-11-19-fed-to-prime` | Two Fed Officials Wanted a Hike. Does Your Loan Float? | Built (no voiceover), awaiting preview |
 | 2026-11-20 | `2026-11-20-fed-minutes-wording` | The Fed Didn't Hike. Why Are Borrowers Bracing? | Built (no voiceover), awaiting preview |
+| 2026-11-23 | `2026-11-23-ai-break-even` | 1 in 5 Businesses Use AI. When Does It Pay Off? | Built (no voiceover), awaiting preview |
 
 Educational content only; not financial advice.
